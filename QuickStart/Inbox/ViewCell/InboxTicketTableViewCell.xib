@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="InboxTicketTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W9-ur-tkA" userLabel="Ticket Title Label">
+                        <rect key="frame" x="78" y="33" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" name="color_inbox_cell_ticket_title"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTw-SA-sxF" userLabel="Agent Nickname Label">
+                        <rect key="frame" x="78" y="29" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" name="color_inbox_cell_ticket_agent"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ge-Lc-qfD" userLabel="Date Label">
+                        <rect key="frame" x="306" y="29" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" name="color_inbox_cell_ticket_date"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBT-sS-ctu" userLabel="Last Message Label">
+                        <rect key="frame" x="78" y="37" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" name="color_inbox_cell_ticket_last_msg"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_default_profile" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-7g-V7T" userLabel="Agent Profile Image View">
+                        <rect key="frame" x="14" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Mtw-oL-dpe"/>
+                            <constraint firstAttribute="width" constant="50" id="oCP-CL-7tC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcR-bY-Vjn" userLabel="Divider View">
+                        <rect key="frame" x="78" y="64.5" width="242" height="1"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Zmq-ug-rvK"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-eO-4zm" userLabel="Unread Count Container View">
+                        <rect key="frame" x="286" y="27" width="20" height="20"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-di-nQC" userLabel="Unread Count Label">
+                                <rect key="frame" x="0.0" y="1.5" width="20" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PIj-di-nQC" firstAttribute="leading" secondItem="V7w-eO-4zm" secondAttribute="leading" id="J6U-dN-taA"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="dcI-F7-uKk"/>
+                            <constraint firstItem="PIj-di-nQC" firstAttribute="centerY" secondItem="V7w-eO-4zm" secondAttribute="centerY" id="fxp-hq-qiM"/>
+                            <constraint firstAttribute="trailing" secondItem="PIj-di-nQC" secondAttribute="trailing" id="iyD-Sk-h3f"/>
+                            <constraint firstAttribute="height" constant="20" id="lRi-XK-USg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fBT-sS-ctu" firstAttribute="leading" secondItem="nfC-7g-V7T" secondAttribute="trailing" constant="14" id="5Cv-BV-s6V"/>
+                    <constraint firstItem="UTw-SA-sxF" firstAttribute="leading" secondItem="nfC-7g-V7T" secondAttribute="trailing" constant="14" id="5qi-sJ-rzh"/>
+                    <constraint firstItem="V7w-eO-4zm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fBT-sS-ctu" secondAttribute="trailing" priority="750" constant="14" id="IgP-M4-6Sn"/>
+                    <constraint firstItem="nfC-7g-V7T" firstAttribute="centerY" secondItem="4W9-ur-tkA" secondAttribute="centerY" id="V0U-f4-N3b"/>
+                    <constraint firstItem="4W9-ur-tkA" firstAttribute="top" secondItem="UTw-SA-sxF" secondAttribute="bottom" constant="4" id="X39-cA-gMj"/>
+                    <constraint firstAttribute="trailing" secondItem="4ge-Lc-qfD" secondAttribute="trailing" constant="14" id="bEl-s9-Wty"/>
+                    <constraint firstItem="fBT-sS-ctu" firstAttribute="top" secondItem="4W9-ur-tkA" secondAttribute="bottom" constant="4" id="cZj-HQ-Uee"/>
+                    <constraint firstItem="nfC-7g-V7T" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k9O-4k-JPW"/>
+                    <constraint firstItem="tcR-bY-Vjn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="78" id="lW4-UY-F3p"/>
+                    <constraint firstAttribute="bottom" secondItem="tcR-bY-Vjn" secondAttribute="bottom" id="pNf-gI-axi"/>
+                    <constraint firstItem="nfC-7g-V7T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="psc-FG-unh"/>
+                    <constraint firstAttribute="trailing" secondItem="V7w-eO-4zm" secondAttribute="trailing" constant="14" id="q2U-X9-fGo"/>
+                    <constraint firstItem="4ge-Lc-qfD" firstAttribute="centerY" secondItem="UTw-SA-sxF" secondAttribute="centerY" id="rrG-L0-XRv"/>
+                    <constraint firstItem="V7w-eO-4zm" firstAttribute="centerY" secondItem="fBT-sS-ctu" secondAttribute="centerY" id="uDZ-od-DRa"/>
+                    <constraint firstItem="4W9-ur-tkA" firstAttribute="leading" secondItem="nfC-7g-V7T" secondAttribute="trailing" constant="14" id="za3-UU-Fhf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tcR-bY-Vjn" secondAttribute="trailing" id="sua-cO-doV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="agentNickname" destination="UTw-SA-sxF" id="pWv-yj-wqA"/>
+                <outlet property="agentProfileImageView" destination="nfC-7g-V7T" id="8ul-8B-amA"/>
+                <outlet property="dateLabel" destination="4ge-Lc-qfD" id="d8j-r3-lxN"/>
+                <outlet property="dividerView" destination="tcR-bY-Vjn" id="CNr-t8-zAv"/>
+                <outlet property="lastMessageLabel" destination="fBT-sS-ctu" id="jXQ-Oj-tz3"/>
+                <outlet property="ticketTitleLabel" destination="4W9-ur-tkA" id="Vzy-Ou-nUF"/>
+                <outlet property="unreadCountContainerView" destination="V7w-eO-4zm" id="hdn-GN-ADS"/>
+                <outlet property="unreadCountLabel" destination="PIj-di-nQC" id="dF1-NV-J1P"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_default_profile" width="56" height="56"/>
+        <namedColor name="color_inbox_cell_ticket_agent">
+            <color red="0.25900000333786011" green="0.27799999713897705" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_inbox_cell_ticket_date">
+            <color red="0.67100000381469727" green="0.70599997043609619" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_inbox_cell_ticket_last_msg">
+            <color red="0.56099998950958252" green="0.62000000476837158" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_inbox_cell_ticket_title">
+            <color red="0.43500000238418579" green="0.27799999713897705" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

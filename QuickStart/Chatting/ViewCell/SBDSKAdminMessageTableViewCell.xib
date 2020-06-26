@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="167" id="KGk-i7-Jjw" customClass="SBDSKAdminMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE DIVIDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8H-VG-O4c" userLabel="Date Divider Label">
+                        <rect key="frame" x="0.0" y="16" width="320" height="13"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="gnc-2U-nc2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                        <color key="textColor" name="color_message_date_divider"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-0h-t9g" userLabel="Message Conatiner View">
+                        <rect key="frame" x="14" y="43" width="292" height="72.5"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Message Text" translatesAutoresizingMaskIntoConstraints="NO" id="adf-Ee-pUJ" userLabel="Message Text View">
+                                <rect key="frame" x="10" y="11" width="272" height="34.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" name="color_admin_message_text"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6A-rQ-7Oi" userLabel="Message Date Label">
+                                <rect key="frame" x="256.5" y="49.5" width="25.5" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Wtw-4p-1Xg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" name="color_admin_message_date"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="color_admin_message_bg"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="n6A-rQ-7Oi" secondAttribute="bottom" constant="9" id="4AZ-mZ-SVv" userLabel="Message Date Label Bottom Margin"/>
+                            <constraint firstItem="adf-Ee-pUJ" firstAttribute="leading" secondItem="hIg-0h-t9g" secondAttribute="leading" constant="10" id="CAy-6T-iD0"/>
+                            <constraint firstAttribute="trailing" secondItem="n6A-rQ-7Oi" secondAttribute="trailing" constant="10" id="Hnf-gf-7Mc"/>
+                            <constraint firstItem="adf-Ee-pUJ" firstAttribute="top" secondItem="hIg-0h-t9g" secondAttribute="top" constant="11" id="Lp7-Gs-v8y"/>
+                            <constraint firstAttribute="trailing" secondItem="adf-Ee-pUJ" secondAttribute="trailing" constant="10" id="Y1s-VH-jZF"/>
+                            <constraint firstItem="n6A-rQ-7Oi" firstAttribute="top" secondItem="adf-Ee-pUJ" secondAttribute="bottom" constant="4" id="f0l-eX-hq9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hIg-0h-t9g" secondAttribute="trailing" constant="14" id="9Tw-4q-XpE"/>
+                    <constraint firstAttribute="trailing" secondItem="T8H-VG-O4c" secondAttribute="trailing" id="J5v-m3-ydR"/>
+                    <constraint firstItem="T8H-VG-O4c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PQl-ni-FGr"/>
+                    <constraint firstItem="hIg-0h-t9g" firstAttribute="top" secondItem="T8H-VG-O4c" secondAttribute="bottom" constant="14" id="bW1-V8-o5m"/>
+                    <constraint firstItem="T8H-VG-O4c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dci-ra-ZXk"/>
+                    <constraint firstItem="hIg-0h-t9g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="uRV-gD-mi9"/>
+                    <constraint firstItem="T8H-VG-O4c" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="z3U-mo-Bh9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dateDividerLabel" destination="T8H-VG-O4c" id="aXa-8r-7hV"/>
+                <outlet property="dateDividerLabelHeight" destination="gnc-2U-nc2" id="i9j-zh-nen"/>
+                <outlet property="dateDividerLabelTopMargin" destination="dci-ra-ZXk" id="S1P-jA-Xtv"/>
+                <outlet property="messageContainerView" destination="hIg-0h-t9g" id="BIf-1p-nWo"/>
+                <outlet property="messageContainerViewLeftMargin" destination="uRV-gD-mi9" id="AOq-Nu-or6"/>
+                <outlet property="messageContainerViewRightMargin" destination="9Tw-4q-XpE" id="ZRq-EJ-KUB"/>
+                <outlet property="messageContainerViewTopMargin" destination="bW1-V8-o5m" id="9TF-lt-HLE"/>
+                <outlet property="messageDateLabel" destination="n6A-rQ-7Oi" id="KTX-ZI-Fra"/>
+                <outlet property="messageDateLabelBottomMargin" destination="4AZ-mZ-SVv" id="cCR-wb-Zon"/>
+                <outlet property="messageDateLabelHeight" destination="Wtw-4p-1Xg" id="ipC-Qy-n5o"/>
+                <outlet property="messageDateLabelTopMargin" destination="f0l-eX-hq9" id="pvC-Xi-rMm"/>
+                <outlet property="messageTextView" destination="adf-Ee-pUJ" id="iG4-7L-wdX"/>
+                <outlet property="messageTextViewLeftMargin" destination="CAy-6T-iD0" id="SVi-t4-off"/>
+                <outlet property="messageTextViewRightMargin" destination="Y1s-VH-jZF" id="u7a-d5-sY1"/>
+                <outlet property="messageTextViewTopMargin" destination="Lp7-Gs-v8y" id="Hox-8e-IkP"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="113.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_admin_message_bg">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_admin_message_date">
+            <color red="0.67100000381469727" green="0.70599997043609619" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_admin_message_text">
+            <color red="0.25900000333786011" green="0.27799999713897705" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_message_date_divider">
+            <color red="0.54100000858306885" green="0.57599997520446777" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

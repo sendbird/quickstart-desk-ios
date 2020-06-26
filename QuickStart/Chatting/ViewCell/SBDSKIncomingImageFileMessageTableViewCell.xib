@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="SBDSKIncomingImageFileMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="244.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE DIVIDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06c-3q-3Gj" userLabel="Date Divider Label">
+                        <rect key="frame" x="0.0" y="16" width="334" height="13"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="nFS-P5-qf7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.48627450979999998" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqC-dx-wEW" userLabel="Nickname Label">
+                        <rect key="frame" x="52" y="43" width="66.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="AXM-4e-mQc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.48627450979999998" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_default_profile" translatesAutoresizingMaskIntoConstraints="NO" id="mMq-4a-Tmf" userLabel="Profile Image View">
+                        <rect key="frame" x="14" y="183" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="GfL-HA-Et2"/>
+                            <constraint firstAttribute="height" constant="34" id="TXM-4T-S2E"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-wh-4Ip" userLabel="Message Conatiner View">
+                        <rect key="frame" x="51" y="67" width="200" height="150"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6hF-Ri-1Dj" userLabel="Image Loading Activity Indicator">
+                                <rect key="frame" x="90" y="65" width="20" height="20"/>
+                                <color key="color" name="color_loading_activity"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J1h-bc-evu" userLabel="File Image View" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Jok-Kj-to7"/>
+                                    <constraint firstAttribute="width" constant="200" id="y98-y1-7nh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-hG-wtN" userLabel="Message Date Container View">
+                                <rect key="frame" x="149.5" y="124" width="40.5" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sN-6h-CFD" userLabel="Message Date Label">
+                                        <rect key="frame" x="8.5" y="1.5" width="23.5" height="13"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0sN-6h-CFD" firstAttribute="centerY" secondItem="hnV-hG-wtN" secondAttribute="centerY" id="MYQ-OM-B3x"/>
+                                    <constraint firstAttribute="height" constant="17" id="QJ8-SD-lDa"/>
+                                    <constraint firstItem="0sN-6h-CFD" firstAttribute="leading" secondItem="hnV-hG-wtN" secondAttribute="leading" constant="8.5" id="UU0-FD-ecf"/>
+                                    <constraint firstAttribute="trailing" secondItem="0sN-6h-CFD" secondAttribute="trailing" constant="8.5" id="s8e-lL-0YP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="8.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J1h-bc-evu" firstAttribute="leading" secondItem="gwi-wh-4Ip" secondAttribute="leading" id="U2l-G2-HXd"/>
+                            <constraint firstItem="6hF-Ri-1Dj" firstAttribute="centerX" secondItem="gwi-wh-4Ip" secondAttribute="centerX" id="UyY-Dv-RZb"/>
+                            <constraint firstItem="J1h-bc-evu" firstAttribute="top" secondItem="gwi-wh-4Ip" secondAttribute="top" id="VBb-CS-eLk"/>
+                            <constraint firstAttribute="trailing" secondItem="hnV-hG-wtN" secondAttribute="trailing" constant="10" id="cNi-5L-Hyj"/>
+                            <constraint firstAttribute="bottom" secondItem="hnV-hG-wtN" secondAttribute="bottom" constant="9" id="gUl-5s-fKf"/>
+                            <constraint firstItem="6hF-Ri-1Dj" firstAttribute="centerY" secondItem="gwi-wh-4Ip" secondAttribute="centerY" id="sVg-RZ-C6F"/>
+                            <constraint firstAttribute="bottom" secondItem="J1h-bc-evu" secondAttribute="bottom" id="sxX-bN-hny"/>
+                            <constraint firstAttribute="trailing" secondItem="J1h-bc-evu" secondAttribute="trailing" id="yYe-SH-kgJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="gwi-wh-4Ip" firstAttribute="leading" secondItem="mMq-4a-Tmf" secondAttribute="trailing" constant="3" id="2xJ-of-MRU"/>
+                    <constraint firstItem="RqC-dx-wEW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="52" id="L2O-eW-4RR"/>
+                    <constraint firstItem="gwi-wh-4Ip" firstAttribute="bottom" secondItem="mMq-4a-Tmf" secondAttribute="bottom" id="LkX-tt-fQf"/>
+                    <constraint firstItem="06c-3q-3Gj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MKN-pY-VCu"/>
+                    <constraint firstItem="RqC-dx-wEW" firstAttribute="top" secondItem="06c-3q-3Gj" secondAttribute="bottom" constant="14" id="SLD-gc-3wh"/>
+                    <constraint firstItem="06c-3q-3Gj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="eKN-uU-8tC"/>
+                    <constraint firstAttribute="trailing" secondItem="06c-3q-3Gj" secondAttribute="trailing" id="fb5-Ut-PU1"/>
+                    <constraint firstItem="mMq-4a-Tmf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="l7x-7R-5At"/>
+                    <constraint firstItem="gwi-wh-4Ip" firstAttribute="top" secondItem="RqC-dx-wEW" secondAttribute="bottom" constant="7" id="nRG-Er-4ks"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dateDividerLabel" destination="06c-3q-3Gj" id="uPn-2X-wbz"/>
+                <outlet property="dateDividerLabelHeight" destination="nFS-P5-qf7" id="ylw-g9-nhx"/>
+                <outlet property="dateDividerLabelTopMargin" destination="eKN-uU-8tC" id="K5t-90-Tum"/>
+                <outlet property="fileImageView" destination="J1h-bc-evu" id="j0H-dd-Acn"/>
+                <outlet property="fileImageViewHeight" destination="Jok-Kj-to7" id="b9j-AB-YkI"/>
+                <outlet property="fileImageViewWidth" destination="y98-y1-7nh" id="9xF-0y-GXs"/>
+                <outlet property="imageLoadingActivityIndicator" destination="6hF-Ri-1Dj" id="dVy-de-xA5"/>
+                <outlet property="messageContainerView" destination="gwi-wh-4Ip" id="tNa-nv-fa2"/>
+                <outlet property="messageContainerViewTopMargin" destination="nRG-Er-4ks" id="cjl-we-xCY"/>
+                <outlet property="messageDateContainerView" destination="hnV-hG-wtN" id="5dh-Fu-Zzf"/>
+                <outlet property="messageDateLabel" destination="0sN-6h-CFD" id="m8i-eY-rgy"/>
+                <outlet property="nicknameLabel" destination="RqC-dx-wEW" id="sH1-Kn-dil"/>
+                <outlet property="nicknameLabelHeight" destination="AXM-4e-mQc" id="5lL-E9-lyw"/>
+                <outlet property="nicknameLabelTopMargin" destination="SLD-gc-3wh" id="tQg-rG-74I"/>
+                <outlet property="profileImageView" destination="mMq-4a-Tmf" id="f3s-hy-skW"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="190.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_default_profile" width="50" height="50"/>
+        <namedColor name="color_loading_activity">
+            <color red="0.47499999403953552" green="0.31400001049041748" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
