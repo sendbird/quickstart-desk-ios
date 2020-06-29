@@ -17,9 +17,9 @@ It goes through the steps of:
   1. [Introduction](#introduction)
   2. [Prerequisites](#prerequisites)
   3. [Creating a SendBird application](#creating-a-sendbird-application)
-  4. [Install via CocoaPods](#loading-inbox)
-  5. [Install SendBirdDesk framework manually](#installing-sendbirddesk-framework-manually)
-  6. [Install via Carthage](#install-via-carthage)
+  4. [Install via CocoaPods](#1-install-via-cocoapods)
+  5. [Install SendBirdDesk framework manually](#2-install-sendbirddesk-framework-manually)
+  6. [Install via Carthage](#3-install-via-carthage)
   7. [Reference](#reference)
   
 ## Prerequisites 
@@ -60,7 +60,7 @@ end
 * Add `UserNotifications.framework` to `Linked Frameworks and Libraries`.
 * Add `SendBirdDesk.framework` to `Embedded Binaries`.
 
-### 3. Install via Carthage
+## 3. Install via Carthage
 1. Add `github "sendbird/sendbird-desk-ios-framework"`  to your `Cartfile`.
 2. Run `carthage update`.
 3. A `Cartfile.resolved` file and a `Carthage` directory will appear in the same directory as `.xcodeproj` or `.xcworkspace`.
