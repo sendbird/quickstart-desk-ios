@@ -5,7 +5,6 @@
 ## Introduction
 
 Sendbird Desk is a live chat customer support built with Sendbird Chat platform to offer customer engagement and satisfaction. Through its integration, Desk iOS SDK enables you to easily customize your ticketing support system with a UI theme, thereby enhancing customers’ chat experience. For example, you can change the inbox - a management tool and storage unit for the agents’ and tickets’ conversations - to fit your color scheme and layout.  
-This readme provides quick and basic in
 
 This readme provides quick and basic installation steps for the Sendbird Desk. 
 The steps are listed as following:
