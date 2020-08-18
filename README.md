@@ -1,4 +1,4 @@
-# Sendbird Deskf for iOS sample
+# Sendbird Desk for iOS sample
 
 ![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)
 ![Languages](https://img.shields.io/badge/language-Swift-orange.svg)
