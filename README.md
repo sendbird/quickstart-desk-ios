@@ -30,13 +30,13 @@ Following the previous instructions will allow you to experience the sample app 
 
 ## Getting started
 
-This section explains the steps you need to take before testing the sample app.
+This section explains how to install Desk SDK for iOS before testing the sample app. If you're familiar with using external libraries or SDKs in your projects, installing the Desk SDK will be an easy and straightforward process.
 
 ### Create a project
 
 Create a project to get started. Currently Sendbird Desk only supports `Objective-C`.
 
-### Install Desk for iOS
+### Install Desk SDK for iOS
 
 You can install Desk for iOS through manual set-up or through either `CocoaPods` or `Carthage`. 
 
