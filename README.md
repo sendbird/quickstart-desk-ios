@@ -11,8 +11,8 @@ Built with Sendbird Chat platform, Sendbird Desk is a live chat customer support
 
 ## Before getting started
 
-This section provides the pre-installation steps for Sendbird Desk for iOS sample app. 
-  
+This section shows you the prerequisites you need for testing Sendbird Desk for iOS sample app.
+
 ### Requirements
 
 - iOS 8.0 or later
