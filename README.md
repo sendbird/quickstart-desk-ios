@@ -34,9 +34,9 @@ This section explains how to install Desk SDK for iOS before testing the sample 
 
 ### Create a project
 
-Create a project to get started. Currently Sendbird Desk only supports `Objective-C`.
+Create a project to get started. Currently Sendbird Desk SDK for iOS only supports `Objective-C`.
 
-### Install Desk SDK
+### Install Desk SDK for iOS
 
 You can install Desk SDK for iOS through manual set-up or through either `CocoaPods` or `Carthage`. 
 
