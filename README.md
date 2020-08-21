@@ -3,34 +3,28 @@
 ![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)
 ![Languages](https://img.shields.io/badge/language-Objective--C-orange.svg)
 
-
 ## Introduction
 
-Sendbird Desk is a live chat customer support built with Sendbird Chat platform to offer customer engagement and satisfaction. Through its integration, Desk iOS SDK enables you to easily customize your ticketing support system with a UI theme, thereby enhancing customers’ chat experience. For example, you can change the inbox - a management tool and storage unit for the agents’ and tickets’ conversations - to fit your color scheme and layout.  
+Built with Sendbird Chat platforms, Sendbird Desk is a live chat customer support that offers customer satisfaction through enhanced engagement. Through its integration, Desk SDK for iOS enables you to easily customize your ticketing support system with a UI theme, thereby elevating your overall customers’ experience. For example, you can modify the inbox - a management tool and storage unit for the agents’ and tickets’ conversations - to fit within your color scheme and layout.
 
-This readme provides quick and basic installation steps for the Sendbird Desk. 
-The steps are listed as following:
+<br />
 
-- Connecting to Sendbird
-- Connecting to Sendbird Desk
-- Creating a Ticket
-- Retrieving Closed Tickets
+## Before getting started
 
-## Table of Contents
-
-  1. [Introduction](#introduction)
-  2. [Prerequisites](#prerequisites)
-  3. [Creating a Sendbird application](#creating-a-sendbird-application)
-  4. [Install via CocoaPods](#1-install-via-cocoapods)
-  5. [Install SendBirdDesk framework manually](#2-install-sendbirddesk-framework-manually)
-  6. [Install via Carthage](#3-install-via-carthage)
-  7. [Reference](#reference)
+This section provides the pre-installation steps for Sendbird Desk for iOS sample app. 
   
-## Prerequisites 
-- iOS 8.0 or higher
-- Sendbird iOS SDK 3.0.90 or higher
-  
-## Installation
+### Requirements
+
+- iOS 8.0 or later
+- Chat SDK foriOS SDK 3.0.90 or later
+
+### Try the sample app applied with your data 
+
+If you would like to customize the sample app for your usage, you can replace the default sample app ID with your ID - which you can obtain by c[creating your Sendbird application from the dashboard](https://docs.sendbird.com/ios/quick_start#3_install_and_configure_the_chat_sdk_4_step_1_create_a_sendbird_application_from_your_dashboard).
+
+> Note: After creating the Sendbird application, please be sure to contact sales to enable the Desk menu onto the dashboard. Currently, Sendbird Desk is available only for free-trial or Enterprise plans.
+
+Following the previous instructions will allow you to experience the sample app with your data from the Sendbird application.
 
 ## Creating a Sendbird application
 1. Login or Sign-up for an account at [dashboard](https://dashboard.sendbird.com/).
