@@ -16,7 +16,7 @@ This section provides the pre-installation steps for Sendbird Desk for iOS sampl
 ### Requirements
 
 - iOS 8.0 or later
-- Chat SDK foriOS SDK 3.0.90 or later
+- Chat SDK for iOS SDK 3.0.90 or later
 
 ### Try the sample app applied with your data 
 
