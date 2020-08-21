@@ -34,7 +34,7 @@ If you're familiar with external libraries or SDKs, installing the Desk SDK is a
 
 ### Create a project
 
-Create a project to get started. Currently Sendbird Desk only supports Objective-C.
+Create a project to get started. Currently Sendbird Desk only supports `Objective-C`.
 
 ### Install Desk for iOS
 
