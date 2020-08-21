@@ -90,4 +90,4 @@ $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WebRTC.framework
 
 ## For further reference
 
-Please see the following link to learn more about Desk SDK for iOS: https://github.com/sendbird/SendBird-Desk-iOS-Framework
+Please visit the following link to learn more about Desk SDK for iOS: https://github.com/sendbird/SendBird-Desk-iOS-Framework
