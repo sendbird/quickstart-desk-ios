@@ -38,7 +38,7 @@ Create a project to get started. Currently Sendbird Desk SDK for iOS only suppor
 
 ### Install Desk SDK for iOS
 
-You can install Desk SDK for iOS through manual set-up or through either `CocoaPods` or `Carthage`. 
+You can install the Desk SDK through either `CocoaPods` or `Carthage` or through manual set-up. 
 
 #### CocoaPods
 
