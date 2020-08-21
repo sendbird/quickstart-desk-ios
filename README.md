@@ -22,23 +22,29 @@ This section provides the pre-installation steps for Sendbird Desk for iOS sampl
 
 If you would like to customize the sample app for your usage, you can replace the default sample app ID with your ID - which you can obtain by c[creating your Sendbird application from the dashboard](https://docs.sendbird.com/ios/quick_start#3_install_and_configure_the_chat_sdk_4_step_1_create_a_sendbird_application_from_your_dashboard).
 
-> Note: After creating the Sendbird application, please be sure to contact sales to enable the Desk menu onto the dashboard. Currently, Sendbird Desk is available only for free-trial or Enterprise plans.
+> Note: After creating the Sendbird application, please be sure to contact [sales](https://get.sendbird.com/talk-to-sales.html) to enable the Desk menu onto the dashboard. Currently, Sendbird Desk is available only for free-trial or Enterprise plans.
 
 Following the previous instructions will allow you to experience the sample app with your data from the Sendbird application.
 
-## Creating a Sendbird application
-1. Login or Sign-up for an account at [dashboard](https://dashboard.sendbird.com/).
-2. Create or select an application on the Sendbird Dashboard.
-3. Note the Application ID for future reference.
-4. [Contact sales](https://sendbird.com/contact-sales) to get the Desk menu enabled in the dashboard. Sendbird Desk is available only for free-trial or Enterprise plan 
+<br />
 
-## 1. Install via CocoaPods
+## Getting started
 
-First of all, you need Sendbird App ID to start (It can be created on [Sendbird Dashboard](https://dashboard.sendbird.com), but for Desk usage, you may need upgrade.), so please contact [desk@sendbird.com](mailto:desk@sendbird.com) if you want one.
+If you're familiar with external libraries or SDKs, installing the Desk SDK is an easy and straightforward process. 
+
+### Create a project
+
+Create a project to get started. Currently Sendbird Desk only supports Objective-C.
+
+### Install Desk for iOS
+
+You can install Desk for iOS through manual set-up or through either `CocoaPods` or `Carthage`. 
+
+#### CocoaPods
 
 1. Create or edit your `Podfile`
 
-```
+```bash
 # Uncomment the next line to define a global platform for your project
 platform :ios, '8.0'
 
@@ -54,12 +60,9 @@ end
 2. Run `pod install`.
 3. Open `QuickStart.xcworkspace`.
 
-## 2. Install SendBirdDesk framework manually
-* Add `UserNotifications.framework` to `Linked Frameworks and Libraries`.
-* Add `SendBirdDesk.framework` to `Embedded Binaries`.
+#### Carthage
 
-## 3. Install via Carthage
-1. Add `github "sendbird/sendbird-desk-ios-framework"`  to your `Cartfile`.
+1. Add `github "sendbird/sendbird-desk-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
 3. A `Cartfile.resolved` file and a `Carthage` directory will appear in the same directory as `.xcodeproj` or `.xcworkspace`.
 4. Drag the built `.framework` binaries from `Carthage/Build/iOS` into the application’s Xcode project.
@@ -68,15 +71,23 @@ end
 /usr/local/bin/carthage copy-frameworks`.
 ```
 6. Add the paths to the desired frameworks under `Input Files`. For example:
-```
+```bash
 $(SRCROOT)/Carthage/Build/iOS/SendBirdCalls.framework
 $(SRCROOT)/Carthage/Build/iOS/WebRTC.framework
 ```
 7. Add the paths to the copied frameworks to the `Output Files`. For example:
-```
+```bash
 $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdCalls.framework
 $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WebRTC.framework
 ```
 
-## Reference
-Please see the following link for iOS Desk SDK Documentation: https://github.com/sendbird/SendBird-Desk-iOS-Framework
+#### Manual set-up
+
+* Add `UserNotifications.framework` to `Linked Frameworks and Libraries`.
+* Add `SendBirdDesk.framework` to `Embedded Binaries`.
+
+<br />
+
+## For further reference
+
+Please see the following link to learn more about Desk SDK for iOS: https://github.com/sendbird/SendBird-Desk-iOS-Framework
