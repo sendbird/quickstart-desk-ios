@@ -16,7 +16,7 @@ This section shows you the prerequisites you need for testing Sendbird Desk for 
 ### Requirements
 
 - iOS 8.0 or later
-- Chat SDK for iOS 3.0.90 or later
+- [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.90 or later
 
 ### Try the sample app applied with your data 
 
