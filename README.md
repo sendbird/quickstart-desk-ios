@@ -49,12 +49,12 @@ You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/) 
 platform :ios, '8.0'
 
 target 'YOUR_PROJECT' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Sendbird Desk
-  pod 'SendBirdSDK', '>= 3.0.90'
-  pod 'SendBirdDesk'
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for Sendbird Desk
+    pod 'SendBirdSDK', '>= 3.0.90'
+    pod 'SendBirdDesk'
 end
 ```
 2. Run `pod install`.
