@@ -38,7 +38,7 @@ Create a project to get started.
 
 ### Install Desk SDK for iOS
 
-You can install the Desk SDK through either `CocoaPods` or `Carthage` or through manual set-up. 
+You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) or through manual set-up. 
 
 #### CocoaPods
 
@@ -49,12 +49,12 @@ You can install the Desk SDK through either `CocoaPods` or `Carthage` or through
 platform :ios, '8.0'
 
 target 'YOUR_PROJECT' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for Sendbird Desk
-  pod 'SendBirdSDK', '>= 3.0.90'
-  pod 'SendBirdDesk'
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for Sendbird Desk
+    pod 'SendBirdSDK', '>= 3.0.90'
+    pod 'SendBirdDesk'
 end
 ```
 2. Run `pod install`.
@@ -65,17 +65,17 @@ end
 1. Add `github "sendbird/sendbird-desk-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
 3. A `Cartfile.resolved` file and a `Carthage` directory will appear in the same directory as `.xcodeproj` or `.xcworkspace`.
-4. Drag the built `.framework` binaries from `Carthage/Build/iOS` into the application’s Xcode project.
-5. On the application targets’ `Build Phases` settings tab, click the `+` icon and choose `New Run Script Phase`. Create a `Run Script` that specifies the desired shell (e.g. `/bin/sh`), then add the following contents to the script area below the shell:
+4. Drag the built `.framework` binaries from **Carthage/Build/iOS** into the application’s Xcode project.
+5. On the application targets’ **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a **Run Script** that specifies the desired shell (e.g. `/bin/sh`), then add the following contents to the script area below the shell:
 ```bash
 /usr/local/bin/carthage copy-frameworks`.
 ```
-6. Add the paths to the desired frameworks under `Input Files`. For example:
+6. Add the paths to the desired frameworks under **Input Files**. For example:
 ```bash
 $(SRCROOT)/Carthage/Build/iOS/SendBirdCalls.framework
 $(SRCROOT)/Carthage/Build/iOS/WebRTC.framework
 ```
-7. Add the paths to the copied frameworks to the `Output Files`. For example:
+7. Add the paths to the copied frameworks to the **Output Files**. For example:
 ```bash
 $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdCalls.framework
 $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WebRTC.framework
@@ -83,8 +83,8 @@ $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WebRTC.framework
 
 #### Manual set-up
 
-* Add `UserNotifications.framework` to `Linked Frameworks and Libraries`.
-* Add `SendBirdDesk.framework` to `Embedded Binaries`.
+* Add `UserNotifications.framework` to **Linked Frameworks and Libraries**.
+* Add `SendBirdDesk.framework` to **Embedded Binaries**.
 
 <br />
 
