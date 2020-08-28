@@ -65,7 +65,7 @@ end
 1. Add `github "sendbird/sendbird-desk-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
 3. A `Cartfile.resolved` file and a `Carthage` directory will appear in the same directory as `.xcodeproj` or `.xcworkspace`.
-4. Drag the built `.framework` binaries from **Carthage/Build/iOS** into the application’s Xcode project.
+4. Drag the built `.framework` binaries from `Carthage/Build/iOS` into the application’s Xcode project.
 5. On the application targets’ **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a **Run Script** that specifies the desired shell (e.g. `/bin/sh`), then add the following contents to the script area below the shell:
 ```bash
 /usr/local/bin/carthage copy-frameworks`.
