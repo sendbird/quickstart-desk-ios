@@ -18,7 +18,7 @@ This section shows you the prerequisites you need for testing Sendbird Desk for 
 - iOS 8.0 or later
 - [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.90 or later
 
-### Try the sample app applied with your data 
+### Try the sample app using your data 
 
 If you would like to customize the sample app for your usage, you can replace the default sample app ID with your ID - which you can obtain by [creating your Sendbird application from the dashboard](https://docs.sendbird.com/ios/quick_start#3_install_and_configure_the_chat_sdk_4_step_1_create_a_sendbird_application_from_your_dashboard).
 
@@ -40,7 +40,7 @@ Create a project to get started.
 
 You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) or through manual set-up. 
 
-#### CocoaPods
+#### - CocoaPods
 
 1. Create or edit your `Podfile`
 
@@ -60,7 +60,7 @@ end
 2. Run `pod install`.
 3. Open `QuickStart.xcworkspace`.
 
-#### Carthage
+#### - Carthage
 
 1. Add `github "sendbird/sendbird-desk-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
