@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/minhyuk.kim/Desktop/Sendbird/Desk/quickstart-desk-ios/QuickStart.xcodeproj">
+      location = "group:Quickstart.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

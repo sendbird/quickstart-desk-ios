@@ -3,477 +3,246 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		291A5D91C5751909561BEB7D /* Pods_QuickStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD56451983B684B69FB22B1 /* Pods_QuickStart.framework */; };
-		E2153369205F9ED6004069FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2153368205F9ED6004069FC /* AppDelegate.m */; };
-		E215336C205F9ED6004069FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E215336B205F9ED6004069FC /* ViewController.m */; };
-		E215336F205F9ED7004069FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E215336D205F9ED7004069FC /* Main.storyboard */; };
-		E2153371205F9ED7004069FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2153370205F9ED7004069FC /* Assets.xcassets */; };
-		E2153374205F9ED7004069FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2153372205F9ED7004069FC /* LaunchScreen.storyboard */; };
-		E2153377205F9ED7004069FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2153376205F9ED7004069FC /* main.m */; };
-		E2153382205FBD93004069FC /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2153380205FBD93004069FC /* InboxViewController.m */; };
-		E2153383205FBD93004069FC /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2153381205FBD93004069FC /* InboxViewController.xib */; };
-		E26CE84820602D2900AAEF79 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE84720602D2900AAEF79 /* UIViewController+Utils.m */; };
-		E26CE84C20603CBB00AAEF79 /* InboxTicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE84A20603CBB00AAEF79 /* InboxTicketTableViewCell.m */; };
-		E26CE84D20603CBB00AAEF79 /* InboxTicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE84B20603CBB00AAEF79 /* InboxTicketTableViewCell.xib */; };
-		E26CE8542061884500AAEF79 /* ChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE8522061884500AAEF79 /* ChattingViewController.m */; };
-		E26CE8552061884500AAEF79 /* ChattingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE8532061884500AAEF79 /* ChattingViewController.xib */; };
-		E26CE859206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE856206191A900AAEF79 /* SBDSKAdminMessageTableViewCell.xib */; };
-		E26CE85A206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE858206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.m */; };
-		E26CE86D206191BC00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE85B206191B600AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.m */; };
-		E26CE86E206191BC00AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE85D206191B700AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.m */; };
-		E26CE86F206191BC00AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE85E206191B700AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.xib */; };
-		E26CE870206191BC00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE85F206191B700AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.xib */; };
-		E26CE871206191BC00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE860206191B800AAEF79 /* SBDSKIncomingUserMessageTableViewCell.m */; };
-		E26CE872206191BC00AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE862206191B800AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.xib */; };
-		E26CE873206191BC00AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE863206191B900AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.m */; };
-		E26CE874206191BC00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE866206191BA00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.xib */; };
-		E26CE875206191BC00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE867206191BA00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.xib */; };
-		E26CE876206191BC00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE868206191BA00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.xib */; };
-		E26CE877206191BC00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE869206191BB00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.m */; };
-		E26CE878206191BC00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE86B206191BB00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.m */; };
-		E26CE888206191C400AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE879206191BF00AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.xib */; };
-		E26CE889206191C400AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE87C206191C100AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.m */; };
-		E26CE88A206191C400AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE87D206191C100AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.xib */; };
-		E26CE88B206191C400AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE87E206191C100AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.m */; };
-		E26CE88C206191C400AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE87F206191C200AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.xib */; };
-		E26CE88D206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE880206191C200AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.m */; };
-		E26CE88E206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE881206191C200AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.xib */; };
-		E26CE88F206191C400AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE883206191C300AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.m */; };
-		E26CE890206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE885206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.m */; };
-		E26CE891206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE887206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.xib */; };
-		E26CE89520619C5000AAEF79 /* FLAnimatedImageView+ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE89320619C5000AAEF79 /* FLAnimatedImageView+ImageCache.m */; };
-		E26CE89820619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE89620619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.m */; };
-		E26CE89B2061AC2400AAEF79 /* SBDSKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE8992061AC2300AAEF79 /* SBDSKUtils.m */; };
-		E26CE89E2061ACE000AAEF79 /* SBDSKFileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE89C2061ACE000AAEF79 /* SBDSKFileImage.m */; };
-		E26CE8A32061AD1200AAEF79 /* SBDSKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE8A12061AD1100AAEF79 /* SBDSKWebViewController.xib */; };
-		E26CE8A42061AD1200AAEF79 /* SBDSKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE8A22061AD1200AAEF79 /* SBDSKWebViewController.m */; };
-		E26CE8A72061E74300AAEF79 /* UIButton+SBDSKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE8A52061E74300AAEF79 /* UIButton+SBDSKButton.m */; };
-		E26CE8AC2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE8A92062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.xib */; };
-		E26CE8AD2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE8AA2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.m */; };
-		E26CE8B22062066100AAEF79 /* SBDSKSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26CE8B02062066000AAEF79 /* SBDSKSettingsViewController.m */; };
-		E26CE8B32062066100AAEF79 /* SBDSKSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26CE8B12062066100AAEF79 /* SBDSKSettingsViewController.xib */; };
+		525F8998276F1AA500F891ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F8997276F1AA500F891ED /* SettingsViewController.swift */; };
+		52D98B5B274FC72E00BFF48C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B5A274FC72E00BFF48C /* AppDelegate.swift */; };
+		52D98B5F274FC72E00BFF48C /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B5E274FC72E00BFF48C /* InboxViewController.swift */; };
+		52D98B62274FC72F00BFF48C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D98B60274FC72F00BFF48C /* Main.storyboard */; };
+		52D98B64274FC73300BFF48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D98B63274FC73300BFF48C /* Assets.xcassets */; };
+		52D98B67274FC73300BFF48C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D98B65274FC73300BFF48C /* LaunchScreen.storyboard */; };
+		52D98B76274FC9E100BFF48C /* InboxTicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D98B75274FC9E100BFF48C /* InboxTicketTableViewCell.xib */; };
+		52D98B78274FC9EC00BFF48C /* InboxTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B77274FC9EC00BFF48C /* InboxTicketTableViewCell.swift */; };
+		52D98B7A274FCDC700BFF48C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B79274FCDC700BFF48C /* ChatViewController.swift */; };
+		52D98B7C274FE44F00BFF48C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B7B274FE44F00BFF48C /* LoginViewController.swift */; };
+		63C542A7A3BD78A5F1BC4E0B /* Pods_Quickstart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF07E6C1A3EDF5BF2BCE64F6 /* Pods_Quickstart.framework */; };
+		A9D1AB60276F16D800780D8A /* FAQMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB5F276F16D800780D8A /* FAQMessageView.swift */; };
+		A9D1AB6A276F2E2100780D8A /* UIImageView.Quickstart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB69276F2E2100780D8A /* UIImageView.Quickstart.swift */; };
+		A9D1AB71276F3E3000780D8A /* FAQBotMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB6F276F3E3000780D8A /* FAQBotMessageCell.swift */; };
+		A9D1AB72276F3E3000780D8A /* FAQBotMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D1AB70276F3E3000780D8A /* FAQBotMessageCell.xib */; };
+		A9D1AB76276F496500780D8A /* FAQMessageView.ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB75276F496500780D8A /* FAQMessageView.ColorSet.swift */; };
+		A9D1AB78276F497300780D8A /* FAQMessageView.FontSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB77276F497300780D8A /* FAQMessageView.FontSet.swift */; };
+		A9DE8FCF27704AC200A6EABC /* SystemBotMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE8FCD27704AC200A6EABC /* SystemBotMessageCell.swift */; };
+		A9DE8FD027704AC200A6EABC /* SystemBotMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DE8FCE27704AC200A6EABC /* SystemBotMessageCell.xib */; };
+		A9DE8FD3277069E500A6EABC /* String.Quickstart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE8FD2277069E500A6EABC /* String.Quickstart.swift */; };
+		A9DE8FD527706A2800A6EABC /* InboxViewController.UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE8FD427706A2800A6EABC /* InboxViewController.UITableViewDelegate.swift */; };
+		A9EBDA3F276F745800A37D9E /* Date.Quickstart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EBDA3E276F745800A37D9E /* Date.Quickstart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D3D40C6C23D297D1C692B4E /* Pods-QuickStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickStart.debug.xcconfig"; path = "Target Support Files/Pods-QuickStart/Pods-QuickStart.debug.xcconfig"; sourceTree = "<group>"; };
-		845050D6B659064A28BAAA2E /* Pods-QuickStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickStart.release.xcconfig"; path = "Target Support Files/Pods-QuickStart/Pods-QuickStart.release.xcconfig"; sourceTree = "<group>"; };
-		CDD56451983B684B69FB22B1 /* Pods_QuickStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2153364205F9ED6004069FC /* SendBird Desk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SendBird Desk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2153367205F9ED6004069FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2153368205F9ED6004069FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E215336A205F9ED6004069FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E215336B205F9ED6004069FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E215336E205F9ED7004069FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2153370205F9ED7004069FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2153373205F9ED7004069FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E2153375205F9ED7004069FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2153376205F9ED7004069FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E215337F205FBD93004069FC /* InboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
-		E2153380205FBD93004069FC /* InboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
-		E2153381205FBD93004069FC /* InboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
-		E26CE8452060271600AAEF79 /* DeskViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeskViewControllerDelegate.h; sourceTree = "<group>"; };
-		E26CE84620602D2900AAEF79 /* UIViewController+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
-		E26CE84720602D2900AAEF79 /* UIViewController+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
-		E26CE84920603CBB00AAEF79 /* InboxTicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InboxTicketTableViewCell.h; sourceTree = "<group>"; };
-		E26CE84A20603CBB00AAEF79 /* InboxTicketTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InboxTicketTableViewCell.m; sourceTree = "<group>"; };
-		E26CE84B20603CBB00AAEF79 /* InboxTicketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTicketTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE8512061884500AAEF79 /* ChattingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChattingViewController.h; sourceTree = "<group>"; };
-		E26CE8522061884500AAEF79 /* ChattingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChattingViewController.m; sourceTree = "<group>"; };
-		E26CE8532061884500AAEF79 /* ChattingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingViewController.xib; sourceTree = "<group>"; };
-		E26CE856206191A900AAEF79 /* SBDSKAdminMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKAdminMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE857206191A900AAEF79 /* SBDSKAdminMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKAdminMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE858206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKAdminMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE85B206191B600AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKIncomingInquireCloseTicketMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE85C206191B600AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKIncomingUrlPreviewTableViewCell.h; sourceTree = "<group>"; };
-		E26CE85D206191B700AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKIncomingGeneralFileMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE85E206191B700AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKIncomingImageFileMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE85F206191B700AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKIncomingUrlPreviewTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE860206191B800AAEF79 /* SBDSKIncomingUserMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKIncomingUserMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE861206191B800AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKIncomingGeneralFileMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE862206191B800AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKIncomingGeneralFileMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE863206191B900AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKIncomingImageFileMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE864206191B900AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKIncomingVideoFileMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE865206191B900AAEF79 /* SBDSKIncomingUserMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKIncomingUserMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE866206191BA00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKIncomingUserMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE867206191BA00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKIncomingVideoFileMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE868206191BA00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKIncomingInquireCloseTicketMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE869206191BB00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKIncomingVideoFileMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE86A206191BB00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKIncomingInquireCloseTicketMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE86B206191BB00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKIncomingUrlPreviewTableViewCell.m; sourceTree = "<group>"; };
-		E26CE86C206191BB00AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKIncomingImageFileMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE879206191BF00AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKOutgoingImageFileMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE87A206191C000AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKOutgoingGeneralFileMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE87B206191C000AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKOutgoingUrlPreviewTableViewCell.h; sourceTree = "<group>"; };
-		E26CE87C206191C100AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKOutgoingUrlPreviewTableViewCell.m; sourceTree = "<group>"; };
-		E26CE87D206191C100AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKOutgoingUrlPreviewTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE87E206191C100AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKOutgoingUserMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE87F206191C200AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKOutgoingUserMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE880206191C200AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKOutgoingGeneralFileMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE881206191C200AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKOutgoingVideoFileMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE882206191C300AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKOutgoingVideoFileMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE883206191C300AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKOutgoingImageFileMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE884206191C300AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKOutgoingImageFileMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE885206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKOutgoingVideoFileMessageTableViewCell.m; sourceTree = "<group>"; };
-		E26CE886206191C400AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKOutgoingUserMessageTableViewCell.h; sourceTree = "<group>"; };
-		E26CE887206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKOutgoingGeneralFileMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E26CE8922061990D00AAEF79 /* SBDSKMessageCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBDSKMessageCellDelegate.h; sourceTree = "<group>"; };
-		E26CE89320619C5000AAEF79 /* FLAnimatedImageView+ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImageView+ImageCache.m"; sourceTree = "<group>"; };
-		E26CE89420619C5000AAEF79 /* FLAnimatedImageView+ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImageView+ImageCache.h"; sourceTree = "<group>"; };
-		E26CE89620619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKGeneralUrlPreviewTempModel.m; sourceTree = "<group>"; };
-		E26CE89720619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKGeneralUrlPreviewTempModel.h; sourceTree = "<group>"; };
-		E26CE8992061AC2300AAEF79 /* SBDSKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKUtils.m; sourceTree = "<group>"; };
-		E26CE89A2061AC2400AAEF79 /* SBDSKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKUtils.h; sourceTree = "<group>"; };
-		E26CE89C2061ACE000AAEF79 /* SBDSKFileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKFileImage.m; sourceTree = "<group>"; };
-		E26CE89D2061ACE000AAEF79 /* SBDSKFileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKFileImage.h; sourceTree = "<group>"; };
-		E26CE8A02061AD1100AAEF79 /* SBDSKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKWebViewController.h; sourceTree = "<group>"; };
-		E26CE8A12061AD1100AAEF79 /* SBDSKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKWebViewController.xib; sourceTree = "<group>"; };
-		E26CE8A22061AD1200AAEF79 /* SBDSKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKWebViewController.m; sourceTree = "<group>"; };
-		E26CE8A52061E74300AAEF79 /* UIButton+SBDSKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SBDSKButton.m"; sourceTree = "<group>"; };
-		E26CE8A62061E74300AAEF79 /* UIButton+SBDSKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SBDSKButton.h"; sourceTree = "<group>"; };
-		E26CE8A92062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKOpenSourceLicenseViewController.xib; sourceTree = "<group>"; };
-		E26CE8AA2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKOpenSourceLicenseViewController.m; sourceTree = "<group>"; };
-		E26CE8AB2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKOpenSourceLicenseViewController.h; sourceTree = "<group>"; };
-		E26CE8AF2062066000AAEF79 /* SBDSKSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDSKSettingsViewController.h; sourceTree = "<group>"; };
-		E26CE8B02062066000AAEF79 /* SBDSKSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDSKSettingsViewController.m; sourceTree = "<group>"; };
-		E26CE8B12062066100AAEF79 /* SBDSKSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDSKSettingsViewController.xib; sourceTree = "<group>"; };
-		E28987D520B30B42004A1F9B /* QuickStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickStart.entitlements; sourceTree = "<group>"; };
+		19CFBE7A8E9748C763908890 /* Pods-Quickstart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.release.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.release.xcconfig"; sourceTree = "<group>"; };
+		525F8997276F1AA500F891ED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		52D98B57274FC72E00BFF48C /* Quickstart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quickstart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D98B5A274FC72E00BFF48C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52D98B5E274FC72E00BFF48C /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		52D98B61274FC72F00BFF48C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52D98B63274FC73300BFF48C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52D98B66274FC73300BFF48C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52D98B68274FC73300BFF48C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D98B75274FC9E100BFF48C /* InboxTicketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTicketTableViewCell.xib; sourceTree = "<group>"; };
+		52D98B77274FC9EC00BFF48C /* InboxTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTicketTableViewCell.swift; sourceTree = "<group>"; };
+		52D98B79274FCDC700BFF48C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		52D98B7B274FE44F00BFF48C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9444835679265948E9A2582D /* Pods-Quickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.debug.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.debug.xcconfig"; sourceTree = "<group>"; };
+		A9D1AB5F276F16D800780D8A /* FAQMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQMessageView.swift; sourceTree = "<group>"; };
+		A9D1AB69276F2E2100780D8A /* UIImageView.Quickstart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.Quickstart.swift; sourceTree = "<group>"; };
+		A9D1AB6F276F3E3000780D8A /* FAQBotMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQBotMessageCell.swift; sourceTree = "<group>"; };
+		A9D1AB70276F3E3000780D8A /* FAQBotMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQBotMessageCell.xib; sourceTree = "<group>"; };
+		A9D1AB75276F496500780D8A /* FAQMessageView.ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQMessageView.ColorSet.swift; sourceTree = "<group>"; };
+		A9D1AB77276F497300780D8A /* FAQMessageView.FontSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQMessageView.FontSet.swift; sourceTree = "<group>"; };
+		A9DE8FCD27704AC200A6EABC /* SystemBotMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemBotMessageCell.swift; sourceTree = "<group>"; };
+		A9DE8FCE27704AC200A6EABC /* SystemBotMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystemBotMessageCell.xib; sourceTree = "<group>"; };
+		A9DE8FD12770642D00A6EABC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A9DE8FD2277069E500A6EABC /* String.Quickstart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.Quickstart.swift; sourceTree = "<group>"; };
+		A9DE8FD427706A2800A6EABC /* InboxViewController.UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.UITableViewDelegate.swift; sourceTree = "<group>"; };
+		A9EBDA3E276F745800A37D9E /* Date.Quickstart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.Quickstart.swift; sourceTree = "<group>"; };
+		CF07E6C1A3EDF5BF2BCE64F6 /* Pods_Quickstart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quickstart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E2153361205F9ED6004069FC /* Frameworks */ = {
+		52D98B54274FC72E00BFF48C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				291A5D91C5751909561BEB7D /* Pods_QuickStart.framework in Frameworks */,
+				63C542A7A3BD78A5F1BC4E0B /* Pods_Quickstart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4637E25C6824E7C0867A005D /* Pods */ = {
+		060CD652FF611D1397D61A42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D3D40C6C23D297D1C692B4E /* Pods-QuickStart.debug.xcconfig */,
-				845050D6B659064A28BAAA2E /* Pods-QuickStart.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		9FD3B3B7039DAFD379CE69ED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CDD56451983B684B69FB22B1 /* Pods_QuickStart.framework */,
+				CF07E6C1A3EDF5BF2BCE64F6 /* Pods_Quickstart.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E215335B205F9ED6004069FC = {
+		52D98B4E274FC72E00BFF48C = {
 			isa = PBXGroup;
 			children = (
-				E2153366205F9ED6004069FC /* QuickStart */,
-				E2153365205F9ED6004069FC /* Products */,
-				4637E25C6824E7C0867A005D /* Pods */,
-				9FD3B3B7039DAFD379CE69ED /* Frameworks */,
+				A9DE8FD12770642D00A6EABC /* README.md */,
+				52D98B59274FC72E00BFF48C /* Quickstart */,
+				52D98B58274FC72E00BFF48C /* Products */,
+				8A4C5C46B54F2DA3880D4B41 /* Pods */,
+				060CD652FF611D1397D61A42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		E2153365205F9ED6004069FC /* Products */ = {
+		52D98B58274FC72E00BFF48C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2153364205F9ED6004069FC /* SendBird Desk.app */,
+				52D98B57274FC72E00BFF48C /* Quickstart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2153366205F9ED6004069FC /* QuickStart */ = {
+		52D98B59274FC72E00BFF48C /* Quickstart */ = {
 			isa = PBXGroup;
 			children = (
-				E28987D520B30B42004A1F9B /* QuickStart.entitlements */,
-				E26CE8AE2062064E00AAEF79 /* Settings */,
-				E26CE8A82062060900AAEF79 /* OpenSourceLicense */,
-				E26CE89F2061AD0100AAEF79 /* WebView */,
-				E26CE84E20617EFD00AAEF79 /* Chatting */,
-				E26CE844206026FC00AAEF79 /* Common */,
-				E215337D205FBD61004069FC /* Inbox */,
-				E2153367205F9ED6004069FC /* AppDelegate.h */,
-				E2153368205F9ED6004069FC /* AppDelegate.m */,
-				E215336A205F9ED6004069FC /* ViewController.h */,
-				E215336B205F9ED6004069FC /* ViewController.m */,
-				E215336D205F9ED7004069FC /* Main.storyboard */,
-				E2153370205F9ED7004069FC /* Assets.xcassets */,
-				E2153372205F9ED7004069FC /* LaunchScreen.storyboard */,
-				E2153375205F9ED7004069FC /* Info.plist */,
-				E2153376205F9ED7004069FC /* main.m */,
+				52D98B5A274FC72E00BFF48C /* AppDelegate.swift */,
+				52D98B5E274FC72E00BFF48C /* InboxViewController.swift */,
+				A9DE8FD427706A2800A6EABC /* InboxViewController.UITableViewDelegate.swift */,
+				52D98B7B274FE44F00BFF48C /* LoginViewController.swift */,
+				52D98B79274FCDC700BFF48C /* ChatViewController.swift */,
+				525F8997276F1AA500F891ED /* SettingsViewController.swift */,
+				A9DE8FCC27704A9300A6EABC /* SystemBot */,
+				A9D1AB6C276F2EB500780D8A /* FAQBot */,
+				A9D1AB6B276F2EAA00780D8A /* Extensions */,
+				52D98B74274FC9D300BFF48C /* InboxTicket */,
+				52D98B60274FC72F00BFF48C /* Main.storyboard */,
+				52D98B63274FC73300BFF48C /* Assets.xcassets */,
+				52D98B65274FC73300BFF48C /* LaunchScreen.storyboard */,
+				52D98B68274FC73300BFF48C /* Info.plist */,
 			);
-			path = QuickStart;
+			path = Quickstart;
 			sourceTree = "<group>";
 		};
-		E215337D205FBD61004069FC /* Inbox */ = {
+		52D98B74274FC9D300BFF48C /* InboxTicket */ = {
 			isa = PBXGroup;
 			children = (
-				E215337E205FBD6C004069FC /* ViewCell */,
-				E215337F205FBD93004069FC /* InboxViewController.h */,
-				E2153380205FBD93004069FC /* InboxViewController.m */,
-				E2153381205FBD93004069FC /* InboxViewController.xib */,
+				52D98B75274FC9E100BFF48C /* InboxTicketTableViewCell.xib */,
+				52D98B77274FC9EC00BFF48C /* InboxTicketTableViewCell.swift */,
 			);
-			path = Inbox;
+			path = InboxTicket;
 			sourceTree = "<group>";
 		};
-		E215337E205FBD6C004069FC /* ViewCell */ = {
+		8A4C5C46B54F2DA3880D4B41 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E26CE84920603CBB00AAEF79 /* InboxTicketTableViewCell.h */,
-				E26CE84A20603CBB00AAEF79 /* InboxTicketTableViewCell.m */,
-				E26CE84B20603CBB00AAEF79 /* InboxTicketTableViewCell.xib */,
+				9444835679265948E9A2582D /* Pods-Quickstart.debug.xcconfig */,
+				19CFBE7A8E9748C763908890 /* Pods-Quickstart.release.xcconfig */,
 			);
-			path = ViewCell;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		E26CE844206026FC00AAEF79 /* Common */ = {
+		A9D1AB6B276F2EAA00780D8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E26CE8A62061E74300AAEF79 /* UIButton+SBDSKButton.h */,
-				E26CE8A52061E74300AAEF79 /* UIButton+SBDSKButton.m */,
-				E26CE89D2061ACE000AAEF79 /* SBDSKFileImage.h */,
-				E26CE89C2061ACE000AAEF79 /* SBDSKFileImage.m */,
-				E26CE89A2061AC2400AAEF79 /* SBDSKUtils.h */,
-				E26CE8992061AC2300AAEF79 /* SBDSKUtils.m */,
-				E26CE8452060271600AAEF79 /* DeskViewControllerDelegate.h */,
-				E26CE84620602D2900AAEF79 /* UIViewController+Utils.h */,
-				E26CE84720602D2900AAEF79 /* UIViewController+Utils.m */,
-				E26CE89420619C5000AAEF79 /* FLAnimatedImageView+ImageCache.h */,
-				E26CE89320619C5000AAEF79 /* FLAnimatedImageView+ImageCache.m */,
+				A9D1AB69276F2E2100780D8A /* UIImageView.Quickstart.swift */,
+				A9EBDA3E276F745800A37D9E /* Date.Quickstart.swift */,
+				A9DE8FD2277069E500A6EABC /* String.Quickstart.swift */,
 			);
-			path = Common;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		E26CE84E20617EFD00AAEF79 /* Chatting */ = {
+		A9D1AB6C276F2EB500780D8A /* FAQBot */ = {
 			isa = PBXGroup;
 			children = (
-				E26CE85020617F1E00AAEF79 /* ViewCell */,
-				E26CE84F20617F1500AAEF79 /* URLPreview */,
-				E26CE8512061884500AAEF79 /* ChattingViewController.h */,
-				E26CE8522061884500AAEF79 /* ChattingViewController.m */,
-				E26CE8532061884500AAEF79 /* ChattingViewController.xib */,
+				A9D1AB70276F3E3000780D8A /* FAQBotMessageCell.xib */,
+				A9D1AB6F276F3E3000780D8A /* FAQBotMessageCell.swift */,
+				A9D1AB5F276F16D800780D8A /* FAQMessageView.swift */,
+				A9D1AB75276F496500780D8A /* FAQMessageView.ColorSet.swift */,
+				A9D1AB77276F497300780D8A /* FAQMessageView.FontSet.swift */,
 			);
-			path = Chatting;
+			path = FAQBot;
 			sourceTree = "<group>";
 		};
-		E26CE84F20617F1500AAEF79 /* URLPreview */ = {
+		A9DE8FCC27704A9300A6EABC /* SystemBot */ = {
 			isa = PBXGroup;
 			children = (
-				E26CE89720619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.h */,
-				E26CE89620619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.m */,
+				A9DE8FCD27704AC200A6EABC /* SystemBotMessageCell.swift */,
+				A9DE8FCE27704AC200A6EABC /* SystemBotMessageCell.xib */,
 			);
-			path = URLPreview;
-			sourceTree = "<group>";
-		};
-		E26CE85020617F1E00AAEF79 /* ViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				E26CE87A206191C000AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.h */,
-				E26CE880206191C200AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.m */,
-				E26CE887206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.xib */,
-				E26CE884206191C300AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.h */,
-				E26CE883206191C300AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.m */,
-				E26CE879206191BF00AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.xib */,
-				E26CE87B206191C000AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.h */,
-				E26CE87C206191C100AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.m */,
-				E26CE87D206191C100AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.xib */,
-				E26CE886206191C400AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.h */,
-				E26CE87E206191C100AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.m */,
-				E26CE87F206191C200AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.xib */,
-				E26CE882206191C300AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.h */,
-				E26CE885206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.m */,
-				E26CE881206191C200AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.xib */,
-				E26CE861206191B800AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.h */,
-				E26CE85D206191B700AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.m */,
-				E26CE862206191B800AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.xib */,
-				E26CE86C206191BB00AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.h */,
-				E26CE863206191B900AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.m */,
-				E26CE85E206191B700AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.xib */,
-				E26CE86A206191BB00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.h */,
-				E26CE85B206191B600AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.m */,
-				E26CE868206191BA00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.xib */,
-				E26CE85C206191B600AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.h */,
-				E26CE86B206191BB00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.m */,
-				E26CE85F206191B700AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.xib */,
-				E26CE865206191B900AAEF79 /* SBDSKIncomingUserMessageTableViewCell.h */,
-				E26CE860206191B800AAEF79 /* SBDSKIncomingUserMessageTableViewCell.m */,
-				E26CE866206191BA00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.xib */,
-				E26CE864206191B900AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.h */,
-				E26CE869206191BB00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.m */,
-				E26CE867206191BA00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.xib */,
-				E26CE857206191A900AAEF79 /* SBDSKAdminMessageTableViewCell.h */,
-				E26CE858206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.m */,
-				E26CE856206191A900AAEF79 /* SBDSKAdminMessageTableViewCell.xib */,
-				E26CE8922061990D00AAEF79 /* SBDSKMessageCellDelegate.h */,
-			);
-			path = ViewCell;
-			sourceTree = "<group>";
-		};
-		E26CE89F2061AD0100AAEF79 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				E26CE8A02061AD1100AAEF79 /* SBDSKWebViewController.h */,
-				E26CE8A22061AD1200AAEF79 /* SBDSKWebViewController.m */,
-				E26CE8A12061AD1100AAEF79 /* SBDSKWebViewController.xib */,
-			);
-			path = WebView;
-			sourceTree = "<group>";
-		};
-		E26CE8A82062060900AAEF79 /* OpenSourceLicense */ = {
-			isa = PBXGroup;
-			children = (
-				E26CE8AB2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.h */,
-				E26CE8AA2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.m */,
-				E26CE8A92062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.xib */,
-			);
-			path = OpenSourceLicense;
-			sourceTree = "<group>";
-		};
-		E26CE8AE2062064E00AAEF79 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				E26CE8AF2062066000AAEF79 /* SBDSKSettingsViewController.h */,
-				E26CE8B02062066000AAEF79 /* SBDSKSettingsViewController.m */,
-				E26CE8B12062066100AAEF79 /* SBDSKSettingsViewController.xib */,
-			);
-			path = Settings;
+			path = SystemBot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2153363205F9ED6004069FC /* QuickStart */ = {
+		52D98B56274FC72E00BFF48C /* Quickstart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E215337A205F9ED7004069FC /* Build configuration list for PBXNativeTarget "QuickStart" */;
+			buildConfigurationList = 52D98B6B274FC73300BFF48C /* Build configuration list for PBXNativeTarget "Quickstart" */;
 			buildPhases = (
-				CC7558DCB1954B75E89325A3 /* [CP] Check Pods Manifest.lock */,
-				E2153360205F9ED6004069FC /* Sources */,
-				E2153361205F9ED6004069FC /* Frameworks */,
-				E2153362205F9ED6004069FC /* Resources */,
-				396150C5EEC6CBD50C75356C /* [CP] Embed Pods Frameworks */,
+				43484DADD7109465A9C29B39 /* [CP] Check Pods Manifest.lock */,
+				52D98B53274FC72E00BFF48C /* Sources */,
+				52D98B54274FC72E00BFF48C /* Frameworks */,
+				52D98B55274FC72E00BFF48C /* Resources */,
+				E8AA195796D62C73EB0E56FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = QuickStart;
-			productName = SendBirdDeskSample;
-			productReference = E2153364205F9ED6004069FC /* SendBird Desk.app */;
+			name = Quickstart;
+			productName = Quickstart;
+			productReference = 52D98B57274FC72E00BFF48C /* Quickstart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E215335C205F9ED6004069FC /* Project object */ = {
+		52D98B4F274FC72E00BFF48C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = SendBird;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					E2153363205F9ED6004069FC = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Push = {
-								enabled = 1;
-							};
-						};
+					52D98B56274FC72E00BFF48C = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = E215335F205F9ED6004069FC /* Build configuration list for PBXProject "QuickStart" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 52D98B52274FC72E00BFF48C /* Build configuration list for PBXProject "Quickstart" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = E215335B205F9ED6004069FC;
-			productRefGroup = E2153365205F9ED6004069FC /* Products */;
+			mainGroup = 52D98B4E274FC72E00BFF48C;
+			productRefGroup = 52D98B58274FC72E00BFF48C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2153363205F9ED6004069FC /* QuickStart */,
+				52D98B56274FC72E00BFF48C /* Quickstart */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E2153362205F9ED6004069FC /* Resources */ = {
+		52D98B55274FC72E00BFF48C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26CE84D20603CBB00AAEF79 /* InboxTicketTableViewCell.xib in Resources */,
-				E26CE88E206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.xib in Resources */,
-				E26CE870206191BC00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.xib in Resources */,
-				E2153374205F9ED7004069FC /* LaunchScreen.storyboard in Resources */,
-				E26CE8552061884500AAEF79 /* ChattingViewController.xib in Resources */,
-				E26CE8AC2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.xib in Resources */,
-				E26CE88C206191C400AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.xib in Resources */,
-				E26CE88A206191C400AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.xib in Resources */,
-				E2153371205F9ED7004069FC /* Assets.xcassets in Resources */,
-				E26CE891206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.xib in Resources */,
-				E26CE8B32062066100AAEF79 /* SBDSKSettingsViewController.xib in Resources */,
-				E26CE875206191BC00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.xib in Resources */,
-				E26CE874206191BC00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.xib in Resources */,
-				E215336F205F9ED7004069FC /* Main.storyboard in Resources */,
-				E26CE8A32061AD1200AAEF79 /* SBDSKWebViewController.xib in Resources */,
-				E26CE86F206191BC00AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.xib in Resources */,
-				E26CE888206191C400AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.xib in Resources */,
-				E2153383205FBD93004069FC /* InboxViewController.xib in Resources */,
-				E26CE876206191BC00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.xib in Resources */,
-				E26CE872206191BC00AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.xib in Resources */,
-				E26CE859206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.xib in Resources */,
+				A9DE8FD027704AC200A6EABC /* SystemBotMessageCell.xib in Resources */,
+				A9D1AB72276F3E3000780D8A /* FAQBotMessageCell.xib in Resources */,
+				52D98B76274FC9E100BFF48C /* InboxTicketTableViewCell.xib in Resources */,
+				52D98B67274FC73300BFF48C /* LaunchScreen.storyboard in Resources */,
+				52D98B64274FC73300BFF48C /* Assets.xcassets in Resources */,
+				52D98B62274FC72F00BFF48C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		396150C5EEC6CBD50C75356C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickStart/Pods-QuickStart-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
-				"${BUILT_PRODUCTS_DIR}/HTMLKit/HTMLKit.framework",
-				"${BUILT_PRODUCTS_DIR}/NYTPhotoViewer/NYTPhotoViewer.framework",
-				"${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework",
-				"${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework.dSYM",
-				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework",
-				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYTPhotoViewer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendBirdDesk.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/SendBirdDesk.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendBirdSDK.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/SendBirdSDK.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TOCropViewController.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickStart/Pods-QuickStart-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC7558DCB1954B75E89325A3 /* [CP] Check Pods Manifest.lock */ = {
+		43484DADD7109465A9C29B39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -488,65 +257,70 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickStart-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Quickstart-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E8AA195796D62C73EB0E56FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quickstart/Pods-Quickstart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quickstart/Pods-Quickstart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quickstart/Pods-Quickstart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E2153360205F9ED6004069FC /* Sources */ = {
+		52D98B53274FC72E00BFF48C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26CE89520619C5000AAEF79 /* FLAnimatedImageView+ImageCache.m in Sources */,
-				E26CE8542061884500AAEF79 /* ChattingViewController.m in Sources */,
-				E26CE873206191BC00AAEF79 /* SBDSKIncomingImageFileMessageTableViewCell.m in Sources */,
-				E26CE871206191BC00AAEF79 /* SBDSKIncomingUserMessageTableViewCell.m in Sources */,
-				E215336C205F9ED6004069FC /* ViewController.m in Sources */,
-				E26CE878206191BC00AAEF79 /* SBDSKIncomingUrlPreviewTableViewCell.m in Sources */,
-				E26CE890206191C400AAEF79 /* SBDSKOutgoingVideoFileMessageTableViewCell.m in Sources */,
-				E26CE8A42061AD1200AAEF79 /* SBDSKWebViewController.m in Sources */,
-				E26CE8B22062066100AAEF79 /* SBDSKSettingsViewController.m in Sources */,
-				E2153377205F9ED7004069FC /* main.m in Sources */,
-				E26CE889206191C400AAEF79 /* SBDSKOutgoingUrlPreviewTableViewCell.m in Sources */,
-				E26CE89B2061AC2400AAEF79 /* SBDSKUtils.m in Sources */,
-				E26CE84C20603CBB00AAEF79 /* InboxTicketTableViewCell.m in Sources */,
-				E2153369205F9ED6004069FC /* AppDelegate.m in Sources */,
-				E26CE84820602D2900AAEF79 /* UIViewController+Utils.m in Sources */,
-				E26CE85A206191AA00AAEF79 /* SBDSKAdminMessageTableViewCell.m in Sources */,
-				E2153382205FBD93004069FC /* InboxViewController.m in Sources */,
-				E26CE89820619EB600AAEF79 /* SBDSKGeneralUrlPreviewTempModel.m in Sources */,
-				E26CE8AD2062063D00AAEF79 /* SBDSKOpenSourceLicenseViewController.m in Sources */,
-				E26CE88D206191C400AAEF79 /* SBDSKOutgoingGeneralFileMessageTableViewCell.m in Sources */,
-				E26CE88B206191C400AAEF79 /* SBDSKOutgoingUserMessageTableViewCell.m in Sources */,
-				E26CE86E206191BC00AAEF79 /* SBDSKIncomingGeneralFileMessageTableViewCell.m in Sources */,
-				E26CE89E2061ACE000AAEF79 /* SBDSKFileImage.m in Sources */,
-				E26CE8A72061E74300AAEF79 /* UIButton+SBDSKButton.m in Sources */,
-				E26CE86D206191BC00AAEF79 /* SBDSKIncomingInquireCloseTicketMessageTableViewCell.m in Sources */,
-				E26CE877206191BC00AAEF79 /* SBDSKIncomingVideoFileMessageTableViewCell.m in Sources */,
-				E26CE88F206191C400AAEF79 /* SBDSKOutgoingImageFileMessageTableViewCell.m in Sources */,
+				52D98B7C274FE44F00BFF48C /* LoginViewController.swift in Sources */,
+				A9DE8FD527706A2800A6EABC /* InboxViewController.UITableViewDelegate.swift in Sources */,
+				A9EBDA3F276F745800A37D9E /* Date.Quickstart.swift in Sources */,
+				52D98B78274FC9EC00BFF48C /* InboxTicketTableViewCell.swift in Sources */,
+				A9D1AB6A276F2E2100780D8A /* UIImageView.Quickstart.swift in Sources */,
+				525F8998276F1AA500F891ED /* SettingsViewController.swift in Sources */,
+				A9D1AB60276F16D800780D8A /* FAQMessageView.swift in Sources */,
+				52D98B5F274FC72E00BFF48C /* InboxViewController.swift in Sources */,
+				52D98B5B274FC72E00BFF48C /* AppDelegate.swift in Sources */,
+				A9D1AB76276F496500780D8A /* FAQMessageView.ColorSet.swift in Sources */,
+				A9D1AB78276F497300780D8A /* FAQMessageView.FontSet.swift in Sources */,
+				A9D1AB71276F3E3000780D8A /* FAQBotMessageCell.swift in Sources */,
+				A9DE8FD3277069E500A6EABC /* String.Quickstart.swift in Sources */,
+				52D98B7A274FCDC700BFF48C /* ChatViewController.swift in Sources */,
+				A9DE8FCF27704AC200A6EABC /* SystemBotMessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E215336D205F9ED7004069FC /* Main.storyboard */ = {
+		52D98B60274FC72F00BFF48C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E215336E205F9ED7004069FC /* Base */,
+				52D98B61274FC72F00BFF48C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E2153372205F9ED7004069FC /* LaunchScreen.storyboard */ = {
+		52D98B65274FC73300BFF48C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2153373205F9ED7004069FC /* Base */,
+				52D98B66274FC73300BFF48C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -554,16 +328,17 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E2153378205F9ED7004069FC /* Debug */ = {
+		52D98B69274FC73300BFF48C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -579,13 +354,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -604,23 +379,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E2153379205F9ED7004069FC /* Release */ = {
+		52D98B6A274FC73300BFF48C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -636,13 +415,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -655,51 +434,74 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E215337B205F9ED7004069FC /* Debug */ = {
+		52D98B6C274FC73300BFF48C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D3D40C6C23D297D1C692B4E /* Pods-QuickStart.debug.xcconfig */;
+			baseConfigurationReference = 9444835679265948E9A2582D /* Pods-Quickstart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QuickStart/QuickStart.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
-				INFOPLIST_FILE = "$(SRCROOT)/QuickStart/Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quickstart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.desk.quickstart;
-				PRODUCT_NAME = "SendBird Desk";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E215337C205F9ED7004069FC /* Release */ = {
+		52D98B6D274FC73300BFF48C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 845050D6B659064A28BAAA2E /* Pods-QuickStart.release.xcconfig */;
+			baseConfigurationReference = 19CFBE7A8E9748C763908890 /* Pods-Quickstart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QuickStart/QuickStart.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RM4A5PXTUX;
-				INFOPLIST_FILE = "$(SRCROOT)/QuickStart/Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quickstart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sendbird.desk.quickstart;
-				PRODUCT_NAME = "SendBird Desk";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -707,25 +509,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E215335F205F9ED6004069FC /* Build configuration list for PBXProject "QuickStart" */ = {
+		52D98B52274FC72E00BFF48C /* Build configuration list for PBXProject "Quickstart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2153378205F9ED7004069FC /* Debug */,
-				E2153379205F9ED7004069FC /* Release */,
+				52D98B69274FC73300BFF48C /* Debug */,
+				52D98B6A274FC73300BFF48C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E215337A205F9ED7004069FC /* Build configuration list for PBXNativeTarget "QuickStart" */ = {
+		52D98B6B274FC73300BFF48C /* Build configuration list for PBXNativeTarget "Quickstart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E215337B205F9ED7004069FC /* Debug */,
-				E215337C205F9ED7004069FC /* Release */,
+				52D98B6C274FC73300BFF48C /* Debug */,
+				52D98B6D274FC73300BFF48C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E215335C205F9ED6004069FC /* Project object */;
+	rootObject = 52D98B4F274FC72E00BFF48C /* Project object */;
 }
