@@ -1,7 +1,7 @@
 # Sendbird Desk for iOS sample
 
 ![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)
-![Languages](https://img.shields.io/badge/language-Objective--C-orange.svg)
+![Languages](https://img.shields.io/badge/language-Swift-orange.svg)
 
 ## Introduction
 
@@ -19,8 +19,10 @@ This section shows you the prerequisites you need for testing Sendbird Desk for 
 
 ### Requirements
 
-- iOS 8.0 or later
-- [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.90 or later
+- iOS 11.0 or later
+- Swift 5.0 or later
+- [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.238
+- [UIKit SDK for iOS](https://github.com/sendbird/sendbird-uikit-ios) 2.1.16
 
 ### Try the sample app using your data 
 
@@ -36,13 +38,43 @@ Following the previous instructions will allow you to experience the sample app 
 
 This section explains how to install Desk SDK for iOS before testing the sample app. If you're familiar with using external libraries or SDKs in your projects, installing the Desk SDK will be an easy and straightforward process.
 
-### Create a project
+### Install Desk SDK for Quickstart
 
-Create a project to get started.
+#### - CocoaPods
+
+1. Open a terminal window. Navigate to the project directory, and then open the Podfile by running the following command
+
+```bash
+$ open Podfile
+```
+
+2. Make sure that the `Podfile` includes the following:
+
+```bash
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'YOUR_PROJECT' do
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for YOUR_PROJECT
+    # Desk
+    pod 'SendBirdDesk'
+    # UIKit
+    pod 'SendBirdUIKit'
+
+end
+```
+
+3. Run `pod install`.
+
+4. Open `QuickStart.xcworkspace`.
+
 
 ### Install Desk SDK for iOS
 
-You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) or through manual set-up. 
+You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/), [Carthage](https://github.com/Carthage/Carthage) or [Swift Package Manager](https://www.swift.org/package-manager/).
 
 #### - CocoaPods
 
@@ -56,9 +88,9 @@ target 'YOUR_PROJECT' do
     # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
     use_frameworks!
     
-    # Pods for Sendbird Desk
-    pod 'SendBirdSDK', '>= 3.0.90'
+    # Pods for YOUR_PROJECT
     pod 'SendBirdDesk'
+
 end
 ```
 2. Run `pod install`.
@@ -66,29 +98,29 @@ end
 
 #### - Carthage
 
-1. Add `github "sendbird/sendbird-desk-ios-framework"` to your `Cartfile`.
-2. Run `carthage update`.
-3. A `Cartfile.resolved` file and a `Carthage` directory will appear in the same directory as `.xcodeproj` or `.xcworkspace`.
-4. Drag the built `.framework` binaries from `Carthage/Build/iOS` into the application’s Xcode project.
-5. On the application targets’ **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a **Run Script** that specifies the desired shell (e.g. `/bin/sh`), then add the following contents to the script area below the shell:
+1. Add `SendBirdDesk` and `SendBirdSDK` into your `Cartfile` as below:
+
 ```bash
-/usr/local/bin/carthage copy-frameworks`.
-```
-6. Add the paths to the desired frameworks under **Input Files**. For example:
-```bash
-$(SRCROOT)/Carthage/Build/iOS/SendBirdCalls.framework
-$(SRCROOT)/Carthage/Build/iOS/WebRTC.framework
-```
-7. Add the paths to the copied frameworks to the **Output Files**. For example:
-```bash
-$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdCalls.framework
-$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WebRTC.framework
+github "sendbird/sendbird-desk-ios-framework"
+github "sendbird/sendbird-ios-framework" == 3.0.90
 ```
 
-#### Manual set-up
+2. Install the `SendBirdDesk` framework through `Carthage`.
 
-* Add `UserNotifications.framework` to **Linked Frameworks and Libraries**.
-* Add `SendBirdDesk.framework` to **Embedded Binaries**.
+```bash
+$ carthage update --use-xcframeworks
+```
+
+#### - Swift Package Manager
+
+1. File -> Swift Packages -> Add package dependency...
+
+2. Choose Package Repository as the SendbirdDesk repository with below link:
+```bash
+https://github.com/sendbird/SendBird-Desk-iOS-Framework.git
+```
+
+3. Select Up to Next Major rules and click the Next button to add the package.
 
 <br />
 
