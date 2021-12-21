@@ -88,7 +88,7 @@ $ carthage update --use-xcframeworks
 
 1. File -> Swift Packages -> Add package dependency...
 
-2. Choose Package Repository as the Sendbird UIKit repository with below link:
+2. Choose Package Repository as the SendbirdDesk repository with below link:
 ```bash
 https://github.com/sendbird/SendBird-Desk-iOS-Framework.git
 ```
