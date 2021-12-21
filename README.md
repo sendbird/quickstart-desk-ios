@@ -21,8 +21,8 @@ This section shows you the prerequisites you need for testing Sendbird Desk for 
 
 - iOS 11.0 or later
 - Swift 5.0 or later
-- [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.238 or later
-- [UIKit SDK for iOS](https://github.com/sendbird/sendbird-uikit-ios) 2.1.16 or later
+- [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.238
+- [UIKit SDK for iOS](https://github.com/sendbird/sendbird-uikit-ios) 2.1.16
 
 ### Try the sample app using your data 
 
@@ -38,9 +38,39 @@ Following the previous instructions will allow you to experience the sample app 
 
 This section explains how to install Desk SDK for iOS before testing the sample app. If you're familiar with using external libraries or SDKs in your projects, installing the Desk SDK will be an easy and straightforward process.
 
-### Create a project
+### Install Desk SDK for Quickstart
 
-Create a project to get started.
+#### - CocoaPods
+
+1. Open a terminal window. Navigate to the project directory, and then open the Podfile by running the following command
+
+```bash
+$ open Podfile
+```
+
+2. Make sure that the `Podfile` includes the following:
+
+```bash
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'YOUR_PROJECT' do
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for YOUR_PROJECT
+    # Desk
+    pod 'SendBirdDesk'
+    # UIKit
+    pod 'SendBirdUIKit'
+
+end
+```
+
+3. Run `pod install`.
+
+4. Open `QuickStart.xcworkspace`.
+
 
 ### Install Desk SDK for iOS
 
@@ -52,17 +82,14 @@ You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/),
 
 ```bash
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'YOUR_PROJECT' do
     # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
     use_frameworks!
     
     # Pods for YOUR_PROJECT
-    # Desk
     pod 'SendBirdDesk'
-    # UIKit
-    pod 'SendBirdUIKit'
 
 end
 ```
