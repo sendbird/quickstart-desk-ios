@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Intialize Chat and Desk SDK
-        SBDMain.initWithApplicationId("YOUR_APP_ID")
+        SBDMain.initWithApplicationId(<#YOUR_APP_ID#>)
         SBDSKMain.initializeDesk()
         
         // Set up queue for delegates
