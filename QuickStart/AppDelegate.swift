@@ -6,21 +6,27 @@
 //
 
 import UIKit
-import SendBirdUIKit
+import SendbirdUIKit
 import SendBirdDesk
-import SendBirdSDK
+import SendbirdChatSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Intialize Chat and Desk SDK
-        SBDMain.initWithApplicationId(<#YOUR_APP_ID#>)
+        let initParams = InitParams(
+            applicationId: <#YOUR_APP_ID#>,
+            isLocalCachingEnabled: true,
+            logLevel: .debug
+        )
+        SendbirdChat.initialize(params: initParams)
         SBDSKMain.initializeDesk()
+        SBDSKTicket.createTicket(with: "", userName: "", priority: .high)
         
         // Set up queue for delegates
         SBDSKMain.setCompletionHandlerDelegateQueue(.main)
+        
         return true
     }
 }

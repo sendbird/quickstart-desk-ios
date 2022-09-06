@@ -14,7 +14,7 @@ class SystemBotMessageCell: UITableViewCell {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    var message: SBDBaseMessage!
+    var message: BaseMessage!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +27,7 @@ class SystemBotMessageCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(message: SBDBaseMessage) {
+    func configure(message: BaseMessage) {
         self.message = message
         
         self.messageLabel.text = message.message
@@ -35,6 +35,6 @@ class SystemBotMessageCell: UITableViewCell {
         let timeFormat = "hh:mm"
         dateLabel.text = Date
             .from(message.createdAt)
-            .sbu_toString(formatString: timeFormat)
+            .sbu_toString(dateFormat: timeFormat)
     }
 }

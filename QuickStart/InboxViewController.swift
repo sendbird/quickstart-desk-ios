@@ -7,7 +7,7 @@
 
 import UIKit
 import SendBirdDesk
-import SendBirdUIKit
+import SendbirdUIKit
 
 class InboxViewController: UIViewController {
     enum Page: Int {
@@ -198,11 +198,11 @@ class InboxViewController: UIViewController {
     
     // MARK: Create ticket
     @IBAction func createTicket(_ sender: Any) {
-        guard let currentUser = SBUGlobals.CurrentUser else { return }
+        guard let currentUser = SBUGlobals.currentUser else { return }
         let userID = currentUser.refinedNickname()
         let title = String(Date().timeIntervalSince1970)
         
-        SBDSKTicket.createTicket(withTitle: title, userName: userID) { [weak self] ticket, error in
+        SBDSKTicket.createTicket(with: title, userName: userID) { [weak self] ticket, error in
             guard let self = self else { return }
             guard let ticket = ticket, error == nil else {
                 // Handler error
@@ -213,7 +213,7 @@ class InboxViewController: UIViewController {
     }
     
     func openTicket(_ ticket: SBDSKTicket) {
-        let chatVC = ChatViewController(channel: ticket.channel!, messageListParams: nil)
+        let chatVC = ChatViewController(channel: ticket.channel!)
         let nav = UINavigationController(rootViewController: chatVC)
         chatVC.ticket = ticket
         nav.modalPresentationStyle = .fullScreen

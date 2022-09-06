@@ -7,6 +7,7 @@
 
 import UIKit
 import SendBirdDesk
+import SendbirdChatSDK
 
 protocol FAQBotMessageCellDelegate: AnyObject {
     func didSelectQuestion(_ faqFileID: Int64, question: String)
@@ -34,16 +35,16 @@ class FAQBotMessageCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(message: SBDBaseMessage, faqData: SBDSKFAQData) {
+    func configure(message: BaseMessage, faqData: SBDSKFAQData) {
         self.faqData = faqData
-        if let url = URL(string: message.sender?.profileUrl ?? "") {
+        if let url = URL(string: message.sender?.profileURL ?? "") {
             profileImageView.load(url: url)
         }
         
         let timeFormat = "hh:mm"
         dateLabel.text = Date
             .from(message.createdAt)
-            .sbu_toString(formatString: timeFormat)
+            .sbu_toString(dateFormat: timeFormat)
         
         // Create FAQ message views and add to the stack view
         faqStackView.arrangedSubviews.forEach {
