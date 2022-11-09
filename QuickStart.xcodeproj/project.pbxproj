@@ -17,7 +17,7 @@
 		52D98B78274FC9EC00BFF48C /* InboxTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B77274FC9EC00BFF48C /* InboxTicketTableViewCell.swift */; };
 		52D98B7A274FCDC700BFF48C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B79274FCDC700BFF48C /* ChatViewController.swift */; };
 		52D98B7C274FE44F00BFF48C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D98B7B274FE44F00BFF48C /* LoginViewController.swift */; };
-		63C542A7A3BD78A5F1BC4E0B /* Pods_Quickstart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF07E6C1A3EDF5BF2BCE64F6 /* Pods_Quickstart.framework */; };
+		9F92A20288A19F16F8544775 /* Pods_Quickstart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A6AECAE0563296AC4A05B2 /* Pods_Quickstart.framework */; };
 		A9D1AB60276F16D800780D8A /* FAQMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB5F276F16D800780D8A /* FAQMessageView.swift */; };
 		A9D1AB6A276F2E2100780D8A /* UIImageView.Quickstart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB69276F2E2100780D8A /* UIImageView.Quickstart.swift */; };
 		A9D1AB71276F3E3000780D8A /* FAQBotMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1AB6F276F3E3000780D8A /* FAQBotMessageCell.swift */; };
@@ -32,7 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19CFBE7A8E9748C763908890 /* Pods-Quickstart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.release.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.release.xcconfig"; sourceTree = "<group>"; };
 		525F8997276F1AA500F891ED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		52D98B57274FC72E00BFF48C /* Quickstart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quickstart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D98B5A274FC72E00BFF48C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +44,8 @@
 		52D98B77274FC9EC00BFF48C /* InboxTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTicketTableViewCell.swift; sourceTree = "<group>"; };
 		52D98B79274FCDC700BFF48C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		52D98B7B274FE44F00BFF48C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9444835679265948E9A2582D /* Pods-Quickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.debug.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.debug.xcconfig"; sourceTree = "<group>"; };
+		A3A6AECAE0563296AC4A05B2 /* Pods_Quickstart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quickstart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A901E6F0281A308500C089D2 /* SendBirdDesk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SendBirdDesk.xcframework; path = Pods/SendBirdDesk/SendBirdDesk.xcframework; sourceTree = "<group>"; };
 		A9D1AB5F276F16D800780D8A /* FAQMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQMessageView.swift; sourceTree = "<group>"; };
 		A9D1AB69276F2E2100780D8A /* UIImageView.Quickstart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.Quickstart.swift; sourceTree = "<group>"; };
 		A9D1AB6F276F3E3000780D8A /* FAQBotMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQBotMessageCell.swift; sourceTree = "<group>"; };
@@ -58,7 +58,8 @@
 		A9DE8FD2277069E500A6EABC /* String.Quickstart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.Quickstart.swift; sourceTree = "<group>"; };
 		A9DE8FD427706A2800A6EABC /* InboxViewController.UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.UITableViewDelegate.swift; sourceTree = "<group>"; };
 		A9EBDA3E276F745800A37D9E /* Date.Quickstart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.Quickstart.swift; sourceTree = "<group>"; };
-		CF07E6C1A3EDF5BF2BCE64F6 /* Pods_Quickstart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quickstart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CF55545AE7BFB5F740CDC7 /* Pods-Quickstart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.debug.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D9FB3F7CE22018ECA06B7A /* Pods-Quickstart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickstart.release.xcconfig"; path = "Target Support Files/Pods-Quickstart/Pods-Quickstart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,29 +67,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C542A7A3BD78A5F1BC4E0B /* Pods_Quickstart.framework in Frameworks */,
+				9F92A20288A19F16F8544775 /* Pods_Quickstart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		060CD652FF611D1397D61A42 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CF07E6C1A3EDF5BF2BCE64F6 /* Pods_Quickstart.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		52D98B4E274FC72E00BFF48C = {
 			isa = PBXGroup;
 			children = (
 				A9DE8FD12770642D00A6EABC /* README.md */,
 				52D98B59274FC72E00BFF48C /* Quickstart */,
 				52D98B58274FC72E00BFF48C /* Products */,
-				8A4C5C46B54F2DA3880D4B41 /* Pods */,
-				060CD652FF611D1397D61A42 /* Frameworks */,
+				EDB8CAAAB0ECB20D10242C15 /* Pods */,
+				FC8FF5292EDE3EEFECA858AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,15 +123,6 @@
 			path = InboxTicket;
 			sourceTree = "<group>";
 		};
-		8A4C5C46B54F2DA3880D4B41 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9444835679265948E9A2582D /* Pods-Quickstart.debug.xcconfig */,
-				19CFBE7A8E9748C763908890 /* Pods-Quickstart.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A9D1AB6B276F2EAA00780D8A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +154,24 @@
 			path = SystemBot;
 			sourceTree = "<group>";
 		};
+		EDB8CAAAB0ECB20D10242C15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1CF55545AE7BFB5F740CDC7 /* Pods-Quickstart.debug.xcconfig */,
+				E1D9FB3F7CE22018ECA06B7A /* Pods-Quickstart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC8FF5292EDE3EEFECA858AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A901E6F0281A308500C089D2 /* SendBirdDesk.xcframework */,
+				A3A6AECAE0563296AC4A05B2 /* Pods_Quickstart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,17 +179,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D98B6B274FC73300BFF48C /* Build configuration list for PBXNativeTarget "Quickstart" */;
 			buildPhases = (
-				43484DADD7109465A9C29B39 /* [CP] Check Pods Manifest.lock */,
+				25204751D87A623D1418D0B8 /* [CP] Check Pods Manifest.lock */,
 				52D98B53274FC72E00BFF48C /* Sources */,
 				52D98B54274FC72E00BFF48C /* Frameworks */,
 				52D98B55274FC72E00BFF48C /* Resources */,
-				E8AA195796D62C73EB0E56FB /* [CP] Embed Pods Frameworks */,
+				622E4C39F2BCCBE28910C4A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Quickstart;
+			packageProductDependencies = (
+			);
 			productName = Quickstart;
 			productReference = 52D98B57274FC72E00BFF48C /* Quickstart.app */;
 			productType = "com.apple.product-type.application";
@@ -207,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 52D98B52274FC72E00BFF48C /* Build configuration list for PBXProject "Quickstart" */;
+			buildConfigurationList = 52D98B52274FC72E00BFF48C /* Build configuration list for PBXProject "QuickStart" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,6 +220,8 @@
 				Base,
 			);
 			mainGroup = 52D98B4E274FC72E00BFF48C;
+			packageReferences = (
+			);
 			productRefGroup = 52D98B58274FC72E00BFF48C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,7 +248,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43484DADD7109465A9C29B39 /* [CP] Check Pods Manifest.lock */ = {
+		25204751D87A623D1418D0B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,7 +270,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E8AA195796D62C73EB0E56FB /* [CP] Embed Pods Frameworks */ = {
+		622E4C39F2BCCBE28910C4A5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,7 +452,7 @@
 		};
 		52D98B6C274FC73300BFF48C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9444835679265948E9A2582D /* Pods-Quickstart.debug.xcconfig */;
+			baseConfigurationReference = B1CF55545AE7BFB5F740CDC7 /* Pods-Quickstart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,7 +483,7 @@
 		};
 		52D98B6D274FC73300BFF48C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19CFBE7A8E9748C763908890 /* Pods-Quickstart.release.xcconfig */;
+			baseConfigurationReference = E1D9FB3F7CE22018ECA06B7A /* Pods-Quickstart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52D98B52274FC72E00BFF48C /* Build configuration list for PBXProject "Quickstart" */ = {
+		52D98B52274FC72E00BFF48C /* Build configuration list for PBXProject "QuickStart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52D98B69274FC73300BFF48C /* Debug */,

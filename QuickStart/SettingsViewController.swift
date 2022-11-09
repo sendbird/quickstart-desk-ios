@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SendBirdSDK
+import SendbirdChatSDK
 
 class SettingsViewController: UIViewController {
 
@@ -17,17 +17,17 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userIdLabel.text = SBDMain.getCurrentUser()?.userId
+        userIdLabel.text = SendbirdChat.getCurrentUser()?.userId
         
-        SBDMain.getDoNotDisturb { (isDoNotDisturbOn, _, _, _, _, _, error) in
+        SendbirdChat.getDoNotDisturb { (isDoNotDisturbOn, _, _, _, _, _, error) in
             self.pushNotificationSwitch.isOn = error == nil ? !isDoNotDisturbOn : false
         }
     }
     
     @IBAction func togglePushNotification(_ sender: UISwitch) {
         sender.isEnabled = false
-        SBDMain.setDoNotDisturbWithEnable(
-            !sender.isOn,
+        SendbirdChat.setDoNotDisturb(
+            enable: !sender.isOn,
             startHour: 0,
             startMin: 0,
             endHour: 23,
@@ -35,7 +35,6 @@ class SettingsViewController: UIViewController {
             timezone: "UTC"
         ) { error in
             sender.isEnabled = true
-            
             if error != nil {
                 sender.isOn = !sender.isOn
                 return
@@ -44,7 +43,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func logOut(_ sender: Any) {
-        SBDMain.disconnect {
+        SendbirdChat.disconnect {
             self.performSegue(withIdentifier: "unwindToLogin", sender: nil)
         }
     }

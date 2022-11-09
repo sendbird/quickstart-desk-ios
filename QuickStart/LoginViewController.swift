@@ -7,7 +7,7 @@
 
 import UIKit
 import SendBirdDesk
-import SendBirdUIKit
+import SendbirdUIKit
 
 class LoginViewController: UIViewController {
 
@@ -26,8 +26,8 @@ class LoginViewController: UIViewController {
             return
         }
         
-        SBUGlobals.CurrentUser = SBUUser(userId: userId, nickname: nickname)
-        SBUMain.connect { user, error in
+        SBUGlobals.currentUser = SBUUser(userId: userId, nickname: nickname)
+        SendbirdUI.connect { user, error in
             guard let user = user, error == nil else { return }
             
             // MARK: Authenticate

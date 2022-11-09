@@ -98,11 +98,11 @@ end
 
 #### - Carthage
 
-1. Add `SendBirdDesk` and `SendBirdSDK` into your `Cartfile` as below:
+1. Add `SendBirdDesk` and `SendbirdChatSDK` into your `Cartfile` as below:
 
 ```bash
 github "sendbird/sendbird-desk-ios-framework"
-github "sendbird/sendbird-ios-framework" == 3.0.90
+github "sendbird/sendbird-chat-ios-framework" == 4.0.9
 ```
 
 2. Install the `SendBirdDesk` framework through `Carthage`.

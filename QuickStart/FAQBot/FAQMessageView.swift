@@ -5,8 +5,8 @@
 //  Created by Jaesung Lee on 2021/12/19.
 //
 
-import SendBirdUIKit
 import SendBirdDesk
+import SendbirdUIKit
 import UIKit
 
 protocol FAQMessageViewDelegate: AnyObject {
