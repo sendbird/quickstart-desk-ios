@@ -9,6 +9,26 @@ import SendBirdDesk
 import SendbirdUIKit
 import UIKit
 
+class ChatViewController: SBUGroupChannelViewController {
+    var ticket: SBDSKTicket!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.useRightBarButtonItem = false
+    }
+}
+
+extension ChatViewController: DeskChannelModuleListDelegate {
+    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64) {
+        ticket.selectQuestion(faqFileId: faqFileID, question: question) { error in
+            // ...
+            // This will send admin message:
+            // e.g. "The customer selected {question}"
+        }
+    }
+}
+
 protocol DeskChannelModuleListDelegate: SBUGroupChannelModuleListDelegate {
     func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64)
 }
@@ -70,32 +90,6 @@ class DeskChannelModule {
         func didSelectQuestion(_ faqFileID: Int64, question: String) {
             (self.delegate as? DeskChannelModuleListDelegate)?
                 .deskChannelModule(self, didSelectQuestion: question, forID: faqFileID)
-        }
-    }
-}
-
-class ChatViewController: SBUGroupChannelViewController {
-    var ticket: SBDSKTicket!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.useRightBarButtonItem = false
-    }
-    
-    override func loadView() {
-        super.loadView()
-        
-        self.listComponent = DeskChannelModule.List()
-    }
-}
-
-extension ChatViewController: DeskChannelModuleListDelegate {
-    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64) {
-        ticket.selectQuestion(faqFileId: faqFileID, question: question) { error in
-            // ...
-            // This will send admin message:
-            // e.g. "The customer selected {question}"
         }
     }
 }

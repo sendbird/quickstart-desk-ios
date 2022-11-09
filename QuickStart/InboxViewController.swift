@@ -215,6 +215,7 @@ class InboxViewController: UIViewController {
     func openTicket(_ ticket: SBDSKTicket) {
         let chatVC = ChatViewController(channel: ticket.channel!)
         let nav = UINavigationController(rootViewController: chatVC)
+        chatVC.listComponent = DeskChannelModule.List()
         chatVC.ticket = ticket
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true, completion: nil)
