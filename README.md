@@ -21,8 +21,8 @@ This section shows you the prerequisites you need for testing Sendbird Desk for 
 
 - iOS 11.0 or later
 - Swift 5.0 or later
-- [Chat SDK for iOS](https://github.com/sendbird/sendbird-ios-framework) 3.0.238
-- [UIKit SDK for iOS](https://github.com/sendbird/sendbird-uikit-ios) 2.1.16
+- [Sendbird Chat SDK](https://github.com/sendbird/sendbird-chat-sdk-ios) for iOS 4.6.7+
+- [Sendbird UIKit SDK](https://github.com/sendbird/sendbird-uikit-ios) for iOS 3.5.5+
 
 ### Try the sample app using your data 
 
@@ -82,7 +82,7 @@ You can install the Desk SDK through either [CocoaPods](https://cocoapods.org/),
 
 ```bash
 # Uncomment the next line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '11.0'
 
 target 'YOUR_PROJECT' do
     # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -102,7 +102,8 @@ end
 
 ```bash
 github "sendbird/sendbird-desk-ios-framework"
-github "sendbird/sendbird-chat-ios-framework" == 4.0.9
+github "sendbird/sendbird-chat-sdk-ios"
+github "sendbird/sendbird-uikit-ios"
 ```
 
 2. Install the `SendBirdDesk` framework through `Carthage`.
