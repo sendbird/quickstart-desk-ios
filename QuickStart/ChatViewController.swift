@@ -44,7 +44,11 @@ extension ChatViewController: DeskChannelModuleListDelegate {
         self.present(alertController, animated: true)
     }
     
-    /// [Documentations | Send confirmation of ticket closing]( https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
+    /// Send confirmation of ticket closing and send user message when the completion block is called.
+    ///
+    /// When `confirmed` is true, it sends user message with the text saying "Yes". If it's `false`, sends the text saying "No".
+    ///
+    /// - NOTE: [Documentations | Send confirmation of ticket closing]( https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
     func sendConfirmation(_ confirmed: Bool, toInquireMessage message: UserMessage) {
         SBDSKTicket.confirmEndOfChat(with: message, confirm: confirmed) { (ticker, error) in
             if let error = error {
@@ -59,6 +63,9 @@ extension ChatViewController: DeskChannelModuleListDelegate {
 protocol DeskChannelModuleListDelegate: SBUGroupChannelModuleListDelegate {
     func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64)
     
+    /// Called when it needs to present alert controller to answer the inquire message for ticket closing.
+    ///
+    /// See `deskChannelModule(_:shouldPresentReplyOptionsForInquireMessage:)` and `sendConfirmation(_:toInquireMessage:)` in `ChatViewController`
     func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldPresentReplyOptionsForInquireMessage message: UserMessage)
 }
 
