@@ -28,17 +28,17 @@ extension ChatViewController: DeskChannelModuleListDelegate {
         }
     }
     
-    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldPresentReplyOptionsForInquireMessage message: UserMessage) {
-        let confirmAction = UIAlertAction(title: "Yes", style: .default) { [weak self, message] _ in
+    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldAskConfirmationOf ticketClosingMessage: UserMessage) {
+        let confirmAction = UIAlertAction(title: "Yes", style: .default) { [weak self, ticketClosingMessage] _ in
             guard let self = self else { return }
-            self.sendConfirmation(true, toInquireMessage: message)
+            self.sendConfirmation(true, ofTicketClosing: ticketClosingMessage)
         }
-        let declineAction = UIAlertAction(title: "No", style: .default) { [weak self, message] _ in
+        let declineAction = UIAlertAction(title: "No", style: .default) { [weak self, ticketClosingMessage] _ in
             guard let self = self else { return }
-            self.sendConfirmation(false, toInquireMessage: message)
+            self.sendConfirmation(false, ofTicketClosing: ticketClosingMessage)
             
         }
-        let alertController = UIAlertController(title: message.message, message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(title: ticketClosingMessage.message, message: nil, preferredStyle: .alert)
         alertController.addAction(confirmAction)
         alertController.addAction(declineAction)
         self.present(alertController, animated: true)
@@ -49,7 +49,7 @@ extension ChatViewController: DeskChannelModuleListDelegate {
     /// When `confirmed` is true, it sends user message with the text saying "Yes". If it's `false`, sends the text saying "No".
     ///
     /// - NOTE: [Documentations | Send confirmation of ticket closing]( https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
-    func sendConfirmation(_ confirmed: Bool, toInquireMessage message: UserMessage) {
+    func sendConfirmation(_ confirmed: Bool, ofTicketClosing message: UserMessage) {
         SBDSKTicket.confirmEndOfChat(with: message, confirm: confirmed) { (ticker, error) in
             if let error = error {
                 print(error.localizedDescription)
@@ -63,10 +63,10 @@ extension ChatViewController: DeskChannelModuleListDelegate {
 protocol DeskChannelModuleListDelegate: SBUGroupChannelModuleListDelegate {
     func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64)
     
-    /// Called when it needs to present alert controller to answer the inquire message for ticket closing.
+    /// Called when it needs to ask the confirmation of ticket closing message.
     ///
     /// See `deskChannelModule(_:shouldPresentReplyOptionsForInquireMessage:)` and `sendConfirmation(_:toInquireMessage:)` in `ChatViewController`
-    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldPresentReplyOptionsForInquireMessage message: UserMessage)
+    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldAskConfirmationOf ticketClosingMessage: UserMessage)
 }
 
 class DeskChannelModule {
@@ -120,7 +120,7 @@ class DeskChannelModule {
             // When the message is inquire ticket closure
             else if let userMessage = message as? UserMessage, userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""), userMessage.data.contains("\"state\":\"WAITING\"") {
                 (self.delegate as? DeskChannelModuleListDelegate)?
-                    .deskChannelModule(self, shouldPresentReplyOptionsForInquireMessage: userMessage)
+                    .deskChannelModule(self, shouldAskConfirmationOf: userMessage)
                 
                 return super.tableView(tableView, cellForRowAt: indexPath)
             }
