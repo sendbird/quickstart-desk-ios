@@ -48,7 +48,7 @@ extension ChatViewController: DeskChannelModuleListDelegate {
     ///
     /// When `confirmed` is true, it sends user message with the text saying "Yes". If it's `false`, sends the text saying "No".
     ///
-    /// - NOTE: [Documentations | Send confirmation of ticket closing]( https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
+    /// - NOTE: [Documentations | Send confirmation of ticket closing](https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
     func sendConfirmation(_ confirmed: Bool, ofTicketClosing message: UserMessage) {
         SBDSKTicket.confirmEndOfChat(with: message, confirm: confirmed) { (ticker, error) in
             if let error = error {
