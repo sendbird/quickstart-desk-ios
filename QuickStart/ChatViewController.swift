@@ -27,10 +27,39 @@ extension ChatViewController: DeskChannelModuleListDelegate {
             // e.g. "The customer selected {question}"
         }
     }
+    
+    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldPresentReplyOptionsForInquireMessage message: UserMessage) {
+        let confirmAction = UIAlertAction(title: "Yes", style: .default) { [weak self, message] _ in
+            guard let self = self else { return }
+            self.sendConfirmation(true, toInquireMessage: message)
+        }
+        let declineAction = UIAlertAction(title: "No", style: .default) { [weak self, message] _ in
+            guard let self = self else { return }
+            self.sendConfirmation(false, toInquireMessage: message)
+            
+        }
+        let alertController = UIAlertController(title: message.message, message: nil, preferredStyle: .alert)
+        alertController.addAction(confirmAction)
+        alertController.addAction(declineAction)
+        self.present(alertController, animated: true)
+    }
+    
+    /// [Documentations | Send confirmation of ticket closing]( https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
+    func sendConfirmation(_ confirmed: Bool, toInquireMessage message: UserMessage) {
+        SBDSKTicket.confirmEndOfChat(with: message, confirm: confirmed) { (ticker, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            self.viewModel?.sendUserMessage(text: confirmed ? "Yes" : "No")
+        }
+    }
 }
 
 protocol DeskChannelModuleListDelegate: SBUGroupChannelModuleListDelegate {
     func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64)
+    
+    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldPresentReplyOptionsForInquireMessage message: UserMessage)
 }
 
 class DeskChannelModule {
@@ -81,6 +110,14 @@ class DeskChannelModule {
                 
                 return cell
             }
+            // When the message is inquire ticket closure
+            else if let userMessage = message as? UserMessage, userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""), userMessage.data.contains("\"state\":\"WAITING\"") {
+                (self.delegate as? DeskChannelModuleListDelegate)?
+                    .deskChannelModule(self, shouldPresentReplyOptionsForInquireMessage: userMessage)
+                
+                return super.tableView(tableView, cellForRowAt: indexPath)
+            }
+            
             // Default message
             else {
                 return super.tableView(tableView, cellForRowAt: indexPath)
