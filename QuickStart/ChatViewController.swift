@@ -6,16 +6,40 @@
 //
 
 import SendBirdDesk
+import SendbirdChatSDK
 import SendbirdUIKit
 import UIKit
 
 class ChatViewController: SBUGroupChannelViewController {
     var ticket: SBDSKTicket!
     
+    /// When this flag is set to true, system messages will be hidden from the message list view.
+    static let shouldHideSystemMessages = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.useRightBarButtonItem = false
+    }
+    
+    override func baseChannelModule(_ listComponent: SBUBaseChannelModule.List, fullMessagesInTableView tableView: UITableView) -> [BaseMessage] {
+        let filtered = self.viewModel?.fullMessageList.filter { Self.isVisible(message: $0) || !Self.shouldHideSystemMessages }
+        return filtered ?? []
+    }
+    
+    static func isVisible(message: BaseMessage) -> Bool {
+        if let message = message as? AdminMessage, let data = Data(base64Encoded: message.data), data.isEmpty == false {
+            let isSystemMessage = (message.customType == "ADMIN_MESSAGE_CUSTOM_TYPE")
+
+            let dataObject = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            let type = dataObject?["type"] as? String
+            return !isSystemMessage &&
+                type != "ASSIGN" &&
+                type != "TRANSFER" &&
+                type != "CLOSE"
+        }
+
+        return true
     }
 }
 
