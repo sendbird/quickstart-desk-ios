@@ -17,18 +17,22 @@ class ChatViewController: SBUGroupChannelViewController {
         
         self.useRightBarButtonItem = false
     }
-}
-
-extension ChatViewController: DeskChannelModuleListDelegate {
-    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64) {
-        ticket.selectQuestion(faqFileId: faqFileID, question: question) { error in
-            // ...
-            // This will send admin message:
-            // e.g. "The customer selected {question}"
+    
+    // MARK: - Send confirmation of ticket closing
+    override func baseChannelViewModel(_ viewModel: SBUBaseChannelViewModel, didReceiveNewMessage message: BaseMessage, forChannel channel: BaseChannel) {
+    // When the message is inquire ticket closure
+        if let userMessage = message as? UserMessage,
+            userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""),
+            userMessage.data.contains("\"state\":\"WAITING\"") {
+            self.presentConfirmationAlert(of: userMessage)
+        } else {
+            super.baseChannelViewModel(viewModel, didReceiveNewMessage: message, forChannel: channel)
         }
     }
     
-    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldAskConfirmationOf ticketClosingMessage: UserMessage) {
+    /// Presents alert controller to ask the confirmation of ticket closing.
+    /// - Parameter ticketClosingMessage: `UserMessage` object that its data contains `SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE` type and `WAITING` state
+    func presentConfirmationAlert(of ticketClosingMessage: UserMessage) {
         let confirmAction = UIAlertAction(title: "Yes", style: .default) { [weak self, ticketClosingMessage] _ in
             guard let self = self else { return }
             self.sendConfirmation(true, ofTicketClosing: ticketClosingMessage)
@@ -44,7 +48,7 @@ extension ChatViewController: DeskChannelModuleListDelegate {
         self.present(alertController, animated: true)
     }
     
-    /// Send confirmation of ticket closing and send user message when the completion block is called.
+    /// Sends confirmation of ticket closing and send user message when the completion block is called.
     ///
     /// When `confirmed` is true, it sends user message with the text saying "Yes". If it's `false`, sends the text saying "No".
     ///
@@ -60,13 +64,18 @@ extension ChatViewController: DeskChannelModuleListDelegate {
     }
 }
 
+extension ChatViewController: DeskChannelModuleListDelegate {
+    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64) {
+        ticket.selectQuestion(faqFileId: faqFileID, question: question) { error in
+            // ...
+            // This will send admin message:
+            // e.g. "The customer selected {question}"
+        }
+    }
+}
+
 protocol DeskChannelModuleListDelegate: SBUGroupChannelModuleListDelegate {
     func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, didSelectQuestion question: String, forID faqFileID: Int64)
-    
-    /// Called when it needs to ask the confirmation of ticket closing message.
-    ///
-    /// See `deskChannelModule(_:shouldPresentReplyOptionsForInquireMessage:)` and `sendConfirmation(_:toInquireMessage:)` in `ChatViewController`
-    func deskChannelModule(_ listComponent: SBUGroupChannelModule.List, shouldAskConfirmationOf ticketClosingMessage: UserMessage)
 }
 
 class DeskChannelModule {
@@ -117,14 +126,6 @@ class DeskChannelModule {
                 
                 return cell
             }
-            // When the message is inquire ticket closure
-            else if let userMessage = message as? UserMessage, userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""), userMessage.data.contains("\"state\":\"WAITING\"") {
-                (self.delegate as? DeskChannelModuleListDelegate)?
-                    .deskChannelModule(self, shouldAskConfirmationOf: userMessage)
-                
-                return super.tableView(tableView, cellForRowAt: indexPath)
-            }
-            
             // Default message
             else {
                 return super.tableView(tableView, cellForRowAt: indexPath)
