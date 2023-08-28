@@ -13,7 +13,7 @@ import UIKit
 class ChatViewController: SBUGroupChannelViewController {
     var ticket: SBDSKTicket!
     
-    /// When this flag is set to true, system messages will be hidden from the message list view.
+    /// When this flag is set to true, system messages will be hidden from the message list view. See `isVisible(message:)` for implementation
     static let shouldHideSystemMessages = false
     
     override func viewDidLoad() {
@@ -28,8 +28,8 @@ class ChatViewController: SBUGroupChannelViewController {
     }
     
     static func isVisible(message: BaseMessage) -> Bool {
-        if let message = message as? AdminMessage, let data = Data(base64Encoded: message.data), data.isEmpty == false {
-            let isSystemMessage = (message.customType == "ADMIN_MESSAGE_CUSTOM_TYPE")
+        if let message = message as? AdminMessage, let data = message.data.data(using: .utf8), data.isEmpty == false {
+            let isSystemMessage = (message.customType == "SENDBIRD_DESK_ADMIN_MESSAGE_CUSTOM_TYPE")
 
             let dataObject = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
             let type = dataObject?["type"] as? String
