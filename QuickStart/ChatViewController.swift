@@ -17,6 +17,50 @@ class ChatViewController: SBUGroupChannelViewController {
         
         self.useRightBarButtonItem = false
     }
+    
+    // MARK: - Send confirmation of ticket closing
+    override func baseChannelViewModel(_ viewModel: SBUBaseChannelViewModel, didReceiveNewMessage message: BaseMessage, forChannel channel: BaseChannel) {
+    // When the message is inquire ticket closure
+        if let userMessage = message as? UserMessage,
+            userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""),
+            userMessage.data.contains("\"state\":\"WAITING\"") {
+            self.presentConfirmationAlert(of: userMessage)
+        }
+        super.baseChannelViewModel(viewModel, didReceiveNewMessage: message, forChannel: channel)
+    }
+    
+    /// Presents alert controller to ask the confirmation of ticket closing.
+    /// - Parameter ticketClosingMessage: `UserMessage` object that its data contains `SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE` type and `WAITING` state
+    func presentConfirmationAlert(of ticketClosingMessage: UserMessage) {
+        let confirmAction = UIAlertAction(title: "Yes", style: .default) { [weak self, ticketClosingMessage] _ in
+            guard let self = self else { return }
+            self.sendConfirmation(true, ofTicketClosing: ticketClosingMessage)
+        }
+        let declineAction = UIAlertAction(title: "No", style: .default) { [weak self, ticketClosingMessage] _ in
+            guard let self = self else { return }
+            self.sendConfirmation(false, ofTicketClosing: ticketClosingMessage)
+            
+        }
+        let alertController = UIAlertController(title: ticketClosingMessage.message, message: nil, preferredStyle: .alert)
+        alertController.addAction(confirmAction)
+        alertController.addAction(declineAction)
+        self.present(alertController, animated: true)
+    }
+    
+    /// Sends confirmation of ticket closing and send user message when the completion block is called.
+    ///
+    /// When `confirmed` is true, it sends user message with the text saying "Yes". If it's `false`, sends the text saying "No".
+    ///
+    /// - NOTE: [Documentations | Send confirmation of ticket closing](https://sendbird.com/docs/desk/sdk/v1/ios/features/confirmation-request#2-send-confirmation-of-ticket-closing)
+    func sendConfirmation(_ confirmed: Bool, ofTicketClosing message: UserMessage) {
+        SBDSKTicket.confirmEndOfChat(with: message, confirm: confirmed) { (ticker, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            self.viewModel?.sendUserMessage(text: confirmed ? "Yes" : "No")
+        }
+    }
 }
 
 extension ChatViewController: DeskChannelModuleListDelegate {
