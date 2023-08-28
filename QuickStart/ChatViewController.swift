@@ -6,6 +6,7 @@
 //
 
 import SendBirdDesk
+import SendbirdChatSDK
 import SendbirdUIKit
 import UIKit
 
@@ -18,7 +19,33 @@ class ChatViewController: SBUGroupChannelViewController {
         self.useRightBarButtonItem = false
     }
     
+    // MARK: - Hide System messages
+     
+    /// When this flag is set to true, system messages will be hidden from the message list view. See `isVisible(message:)` for implementation
+    static let shouldHideSystemMessages = false
+    
+    override func baseChannelModule(_ listComponent: SBUBaseChannelModule.List, fullMessagesInTableView tableView: UITableView) -> [BaseMessage] {
+        let filtered = self.viewModel?.fullMessageList.filter { Self.isVisible(message: $0) || !Self.shouldHideSystemMessages }
+        return filtered ?? []
+    }
+    
+    static func isVisible(message: BaseMessage) -> Bool {
+        if let message = message as? AdminMessage, let data = message.data.data(using: .utf8), data.isEmpty == false {
+            let isSystemMessage = (message.customType == "SENDBIRD_DESK_ADMIN_MESSAGE_CUSTOM_TYPE")
+
+            let dataObject = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            let type = dataObject?["type"] as? String
+            return !isSystemMessage &&
+                type != "ASSIGN" &&
+                type != "TRANSFER" &&
+                type != "CLOSE"
+        }
+
+        return true
+    }
+  
     // MARK: - Send confirmation of ticket closing
+    
     override func baseChannelViewModel(_ viewModel: SBUBaseChannelViewModel, didReceiveNewMessage message: BaseMessage, forChannel channel: BaseChannel) {
     // When the message is inquire ticket closure
         if let userMessage = message as? UserMessage,
