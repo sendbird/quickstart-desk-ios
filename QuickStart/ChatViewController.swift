@@ -25,9 +25,8 @@ class ChatViewController: SBUGroupChannelViewController {
             userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""),
             userMessage.data.contains("\"state\":\"WAITING\"") {
             self.presentConfirmationAlert(of: userMessage)
-        } else {
-            super.baseChannelViewModel(viewModel, didReceiveNewMessage: message, forChannel: channel)
         }
+        super.baseChannelViewModel(viewModel, didReceiveNewMessage: message, forChannel: channel)
     }
     
     /// Presents alert controller to ask the confirmation of ticket closing.
