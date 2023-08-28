@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up queue for delegates
         SBDSKMain.setCompletionHandlerDelegateQueue(.main)
         
+        // Disable unused string set
+        SBUStringSet.Message_Edited = ""
         return true
     }
 }
