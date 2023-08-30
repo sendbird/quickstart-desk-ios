@@ -45,15 +45,14 @@ class ChatViewController: SBUGroupChannelViewController {
     }
   
     // MARK: - Send confirmation of ticket closing
-    
-    override func baseChannelViewModel(_ viewModel: SBUBaseChannelViewModel, didReceiveNewMessage message: BaseMessage, forChannel channel: BaseChannel) {
-    // When the message is inquire ticket closure
-        if let userMessage = message as? UserMessage,
+    override func baseChannelViewModel(_ viewModel: SBUBaseChannelViewModel, didChangeMessageList messages: [BaseMessage], needsToReload: Bool, initialLoad: Bool) {
+        // When the message is inquire ticket closure
+        if let userMessage = messages.first as? UserMessage,
             userMessage.data.contains("\"type\":\"SENDBIRD_DESK_INQUIRE_TICKET_CLOSURE\""),
             userMessage.data.contains("\"state\":\"WAITING\"") {
             self.presentConfirmationAlert(of: userMessage)
         }
-        super.baseChannelViewModel(viewModel, didReceiveNewMessage: message, forChannel: channel)
+        super.baseChannelViewModel(viewModel, didChangeMessageList: messages, needsToReload: needsToReload, initialLoad: initialLoad)
     }
     
     /// Presents alert controller to ask the confirmation of ticket closing.
